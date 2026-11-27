@@ -1,0 +1,4 @@
+﻿Fault type,Observation and trigger,Postcondition
+OBJECT_NOT_DETECTED,Detection in the specified view yields no valid target position; image and field-of-view provenance are retained.,A newly acquired image at the task-specified field of view contains the target.
+DEPTH_INSUFFICIENT,The specimen side-view extent measured from a segmented image is below the prescribed threshold.,"After additional milling, a new side-view image is acquired and segmented to remeasure the specimen; batch evaluation also checks the final simulator mesh independently."
+SPECIMEN_LOST,"The specimen does not move with the probe after retraction, contrary to the expected attachment state.","After reapproach, welding, and lifting, new images establish whether the specimen moves with the probe."

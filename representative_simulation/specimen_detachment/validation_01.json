@@ -1,0 +1,3051 @@
+[
+  {
+    "tool": "validate_plan",
+    "args": {
+      "plan": {
+        "actions": [
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 1,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 1,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ELECTRON"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 3,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 2,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 5,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 5,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ION"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 7,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 6,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 9,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 9,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ELECTRON"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 11,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 10,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 13,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 13,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ION"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 15,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 14,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 17,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 17,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ELECTRON"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 19,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 18,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 21,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 21,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ION"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 23,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 22,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 25,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 25,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ELECTRON"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 27,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 26,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 29,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 29,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 32,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 32,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "deposit_bridge",
+            "params": {
+              "angle_deg": -40,
+              "depth_um": 1.2,
+              "height_um": 4,
+              "offset_x_um": 0,
+              "offset_y_um": 0,
+              "width_um": 2
+            },
+            "refs": {
+              "needle_ref": {
+                "action_index": 30,
+                "kind": "detected_point"
+              },
+              "sem_needle_ref": {
+                "action_index": 33,
+                "kind": "detected_point"
+              },
+              "sem_site_ref": {
+                "action_index": 34,
+                "kind": "detected_point"
+              },
+              "site_ref": {
+                "action_index": 31,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "verify_lift",
+            "params": {}
+          }
+        ],
+        "confidence": 0.6,
+        "covered_intent": "recover_dropped_sample",
+        "decision_summary": {
+          "facts": [
+            "Failure record (read_planning_brief, event-0042): loss_verify_attachment sample_transport_check raised SAMPLE_LOST because the needle was not resolvable in the 50 um SEM frame while the sample was detected at (10.40, -2.49) um; latest image 013 shows the sample with no attached needle.",
+            "Live bounded observation live-01 (SEM, 200 um HFW, pixel 0.1953 um) resolved the needle confidently at (-74.9, -9.7) um: the needle is far from the sample, so a multi-cycle approach is required, and 50 um HFW was simply too narrow to resolve it.",
+            "Experience recovery-1793889106404 (same workflow, identical manipulator root position (-112.47, -9.01, -114.18) um and near-identical sample position) executed the SEM->ION alternating approach at 100 um HFW with every move succeeding; it failed only at the deposit safety gate with 'needle tip is outside bridge deposition footprint (local offset 1.58, -1.73 um)' because it attempted deposition after too few convergence cycles - the move controller applies only 0.7x the measured image-frame error per call.",
+            "Experience recovery-1793880817653 shows the same strategy reaching sub-um residuals; its single collision occurred on an ION move in an older geometry variant, whereas all equivalent moves succeeded in the newer traces, so the strategy is not prohibited.",
+            "Device safety snapshot (read_planning_brief): no collision, stage/manipulator idle, signal simulator_no_weld_contact; captured safe state does not clear future moves, ACE rechecks before execution.",
+            "Deposit geometry is fixed: a 2 um x 4 um rectangle at -40 deg bound to the FIB protection-layer point, with runtime checks of both FIB and SEM projected gaps against it."
+          ],
+          "parameter_reasons": [
+            "HFW 100 um for all acquisitions: it matches every successful detection in recovery-1793889106404 (pixel 0.0977 um) and resolves the needle where the original 50 um SEM detection failed; the live 200 um observation confirms the needle is visible at wide HFW.",
+            "roi_point choices follow task_context exactly: needle uses extremity_diagonal:230 in SEM and extremity_diagonal:250 in FIB; protection_layer uses topleft in SEM and extremity_left_bottom in FIB; the contact note says to approach the protection layer, not the sample center.",
+            "confidence_threshold 0.25 mirrors the value used in all successful prior executions of these detections.",
+            "Four alternating SEM/ION convergence passes (moves at actions 4, 8, 12, 16, 20, 24, 28) instead of the two used in the failed precedent: each move applies 0.7x of the fresh same-beam error, so multiple passes are needed to shrink the initial ~40 um SEM-frame and ~30 um FIB-frame gaps below the 1 um half-width of the deposition footprint; every move re-detects from an image acquired after the previous motion, and any move whose axes are already within the fixed 0.2 um threshold reports arrived without moving, so surplus passes are safe no-ops.",
+            "SEM moves precede ION moves within each pass per view_guidance (SEM X/Y first, then FIB X/Z), with a final SEM check pass so both projections are small at deposition time.",
+            "Fresh FIB (actions 29-31) and SEM (actions 32-34) views are acquired after the last motion to satisfy deposit_bridge's two-view, post-motion data-lineage requirement; site bound to the FIB protection-layer point.",
+            "deposit_bridge keeps the fixed 2x4 um @ -40 deg geometry (width_um 2, height_um 4, angle_deg -40, offsets 0,0; 2*4=8 <= 24 um^2) and uses depth_um 1.2 within the allowed 0.8-1.5 um range: the original weld failed as weak, so a thicker-than-nominal stitch is justified to hold the sample through the 1 um probe lift.",
+            "verify_lift is included as the final action because the required postcondition is that action's success=true; it independently acquires, lifts 1 um after a fresh collision check, re-detects and compares displacements."
+          ],
+          "stage_rationale": "staged_recovery is enabled (stage 1; 36 actions <= 100 remaining, 9 images <= 40 remaining). A single complete stage is justified because the most recent identical case already executed every move type successfully and failed only on insufficient convergence before deposit; this plan adds the missing convergence passes and the deposit gate independently rechecks the footprint before any material is placed. stage_status=complete because the plan includes deposit_bridge plus verify_lift, which can satisfy the declared postcondition.",
+          "strategy": "Re-acquire the needle at 100 um HFW, alternate SEM X/Y and FIB X/Z 0.7-gain move cycles for four passes until both projected needle-tip-to-protection-layer gaps are sub-um, then take fresh post-motion FIB and SEM views with needle and protection-layer detections, deposit a 1.2 um deep carbon bridge preserving the fixed 2x4 um @ -40 deg geometry, and verify the lift.",
+          "unknowns": [
+            "The exact residual needle-tip offset after four convergence passes is unknown until execution; the deposit safety gate independently rechecks both projected gaps and will refuse safely if they do not fit the footprint.",
+            "Whether the SEM projection stays inside the footprint after the final ION-side perturbation is checked by the runtime at deposit time; the final SEM check pass (actions 25-28) minimizes this residual.",
+            "Actual weld contact is established by the simulator at deposition; verify_lift is the authoritative check that the sample follows the probe."
+          ]
+        },
+        "resume_after": "loss_verify_attachment"
+      }
+    },
+    "result": {
+      "accepted": false,
+      "stage": "safety_or_compile",
+      "error": "ValueError: SAFETY_GATE: movement must finish in ION",
+      "issues": [
+        {
+          "path": "actions",
+          "code": "safety_or_compile",
+          "message": "ValueError: SAFETY_GATE: movement must finish in ION"
+        }
+      ]
+    }
+  },
+  {
+    "tool": "validate_plan",
+    "args": {
+      "plan": {
+        "actions": [
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 1,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 1,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ELECTRON"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 3,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 2,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 5,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 5,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ION"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 7,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 6,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 9,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 9,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ELECTRON"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 11,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 10,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 13,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 13,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ION"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 15,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 14,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 17,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 17,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ELECTRON"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 19,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 18,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 21,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 21,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ION"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 23,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 22,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 25,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 25,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ELECTRON"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 27,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 26,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 29,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 29,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ION"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 31,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 30,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 33,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 33,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 35,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 35,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "deposit_bridge",
+            "params": {
+              "angle_deg": -40,
+              "depth_um": 1.2,
+              "height_um": 4,
+              "offset_x_um": 0,
+              "offset_y_um": 0,
+              "width_um": 2
+            },
+            "refs": {
+              "needle_ref": {
+                "action_index": 34,
+                "kind": "detected_point"
+              },
+              "sem_needle_ref": {
+                "action_index": 36,
+                "kind": "detected_point"
+              },
+              "sem_site_ref": {
+                "action_index": 37,
+                "kind": "detected_point"
+              },
+              "site_ref": {
+                "action_index": 33,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "verify_lift",
+            "params": {}
+          }
+        ],
+        "confidence": 0.6,
+        "covered_intent": "recover_dropped_sample",
+        "decision_summary": {
+          "facts": [
+            "Failure record (read_planning_brief, event-0042): loss_verify_attachment sample_transport_check raised SAMPLE_LOST because the needle was not resolvable in the 50 um SEM frame while the sample was detected at (10.40, -2.49) um; the latest image 013 shows the detached sample with no attached needle.",
+            "Live bounded observation live-01 (SEM, 200 um HFW, pixel 0.1953 um) resolved the needle confidently at (-74.9, -9.7) um: the needle is far from the sample, so a multi-cycle approach is required and the original 50 um frame was simply too narrow to resolve the needle.",
+            "Experience recovery-1793889106404 (same workflow, identical manipulator root position (-112.47, -9.01, -114.18) um, near-identical sample position) executed the same SEM->ION alternating approach at 100 um HFW with every move succeeding; it failed only at the deposit safety gate with 'needle tip is outside bridge deposition footprint (local offset 1.58, -1.73 um)' because it attempted deposition after too few convergence cycles - the move controller applies only 0.7x the measured image-frame error per call.",
+            "Experience recovery-1793880817653 shows the same strategy reaching sub-um residuals; its single collision occurred on an ION move in an older geometry variant while all equivalent moves succeeded in the newer trace, so the strategy is not prohibited.",
+            "Device safety snapshot (read_planning_brief): no collision, stage/manipulator idle, signal simulator_no_weld_contact; the captured safe state does not clear future moves, ACE rechecks before execution.",
+            "Deposit geometry is fixed: a 2 um x 4 um rectangle at -40 deg bound to the FIB protection-layer point, with runtime checks of both the FIB and SEM projected gaps against it."
+          ],
+          "parameter_reasons": [
+            "HFW 100 um for all acquisitions: it matches every successful detection in recovery-1793889106404 (pixel 0.0977 um) and resolves the needle where the original 50 um SEM detection failed; the live 200 um observation confirms the needle is visible at wide HFW.",
+            "roi_point choices follow task_context exactly: needle uses extremity_diagonal:230 in SEM and extremity_diagonal:250 in FIB; protection_layer uses topleft in SEM and extremity_left_bottom in FIB; the contact note says to approach the protection layer, not the sample center.",
+            "confidence_threshold 0.25 mirrors the value used in all successful prior executions of these detections.",
+            "Four alternating SEM/ION convergence passes (moves at actions 4, 8, 12, 16, 20, 24, 28, 32) instead of the two used in the failed precedent: each move applies 0.7x of the fresh same-beam error, so multiple passes are needed to shrink the initial ~40 um SEM-frame and ~30 um FIB-frame gaps below the ~1 um half-width of the deposition footprint; every move re-detects from an image acquired after the previous motion, and any move whose axes are already within the fixed 0.2 um threshold reports arrived without moving, so surplus passes are safe no-ops.",
+            "SEM moves precede ION moves within each pass per view_guidance (SEM X/Y first, then FIB X/Z), and movement finishes with an ION move as required by the Safety Gate 'movement must finish in ION'.",
+            "Fresh FIB (actions 33-34) and SEM (actions 35-36) views are acquired after the last motion to satisfy deposit_bridge's two-view, post-motion data-lineage requirement; the site is bound to the FIB protection-layer point.",
+            "deposit_bridge keeps the fixed 2x4 um @ -40 deg geometry (width_um 2, height_um 4, angle_deg -40, offsets 0,0; 2*4=8 <= 24 um^2) and uses depth_um 1.2 within the allowed 0.8-1.5 um range: the original weld failed as weak, so a thicker-than-nominal stitch is justified to hold the sample through the 1 um probe lift.",
+            "verify_lift is included as the final action because the required postcondition is that action's success=true; it independently acquires, lifts 1 um after a fresh collision check, re-detects and compares displacements."
+          ],
+          "stage_rationale": "staged_recovery is enabled (stage 1; 32 actions <= 100 remaining, 9 images <= 40 remaining). A single complete stage is justified because the most recent identical case already executed every move type successfully and failed only on insufficient convergence before deposit; this plan adds the missing convergence passes and the deposit gate independently rechecks the footprint before any material is placed. stage_status=complete because the plan includes deposit_bridge plus verify_lift, which can satisfy the declared postcondition.",
+          "strategy": "Re-acquire the needle at 100 um HFW, alternate SEM X/Y and FIB X/Z 0.7-gain move cycles for four passes ending with an ION move, then take fresh post-motion FIB and SEM views with needle and protection-layer detections, deposit a 1.2 um deep carbon bridge preserving the fixed 2x4 um @ -40 deg geometry, and verify the lift.",
+          "unknowns": [
+            "The exact residual needle-tip offset after four convergence passes is unknown until execution; the deposit safety gate independently rechecks both projected gaps and will refuse safely if they do not fit the footprint.",
+            "Whether the SEM projection stays inside the footprint after the final ION-side convergence is checked by the runtime at deposit time.",
+            "Actual weld contact is established by the simulator at deposition; verify_lift is the authoritative check that the sample follows the probe."
+          ]
+        },
+        "resume_after": "loss_verify_attachment"
+      }
+    },
+    "result": {
+      "accepted": false,
+      "stage": "safety_or_compile",
+      "error": "ValueError: SAFETY_GATE: image_ref must point to acquire_image",
+      "issues": [
+        {
+          "path": "actions[*].refs.image_ref",
+          "code": "safety_or_compile",
+          "message": "ValueError: SAFETY_GATE: image_ref must point to acquire_image"
+        }
+      ]
+    }
+  },
+  {
+    "tool": "validate_plan",
+    "args": {
+      "plan": {
+        "actions": [
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 1,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 1,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ELECTRON"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 3,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 2,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 5,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 5,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ION"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 7,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 6,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 9,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 9,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ELECTRON"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 11,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 10,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 13,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 13,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ION"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 15,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 14,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 17,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 17,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ELECTRON"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 19,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 18,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 21,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 21,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ION"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 23,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 22,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 25,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 25,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ELECTRON"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 27,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 26,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 29,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 29,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ION"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 31,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 30,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 33,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 33,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 35,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 35,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "deposit_bridge",
+            "params": {
+              "angle_deg": -40,
+              "depth_um": 1.2,
+              "height_um": 4,
+              "offset_x_um": 0,
+              "offset_y_um": 0,
+              "width_um": 2
+            },
+            "refs": {
+              "needle_ref": {
+                "action_index": 34,
+                "kind": "detected_point"
+              },
+              "sem_needle_ref": {
+                "action_index": 36,
+                "kind": "detected_point"
+              },
+              "sem_site_ref": {
+                "action_index": 37,
+                "kind": "detected_point"
+              },
+              "site_ref": {
+                "action_index": 33,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "verify_lift",
+            "params": {}
+          }
+        ],
+        "confidence": 0.6,
+        "covered_intent": "recover_dropped_sample",
+        "decision_summary": {
+          "facts": [
+            "Failure record (read_planning_brief, event-0042): loss_verify_attachment sample_transport_check raised SAMPLE_LOST because the needle was not resolvable in the 50 um SEM frame while the sample was detected at (10.40, -2.49) um; the latest image 013 shows the detached sample with no attached needle.",
+            "Live bounded observation live-01 (SEM, 200 um HFW, pixel 0.1953 um) resolved the needle confidently at (-74.9, -9.7) um: the needle is far from the sample, so a multi-cycle approach is required and the original 50 um frame was simply too narrow to resolve the needle.",
+            "Experience recovery-1793889106404 (same workflow, identical manipulator root position (-112.47, -9.01, -114.18) um, near-identical sample position) executed the same SEM->ION alternating approach at 100 um HFW with every move succeeding; it failed only at the deposit safety gate with 'needle tip is outside bridge deposition footprint (local offset 1.58, -1.73 um)' because it attempted deposition after too few convergence cycles - the move controller applies only 0.7x the measured image-frame error per call.",
+            "Experience recovery-1793880817653 shows the same strategy reaching sub-um residuals; its single collision occurred on an ION move in an older geometry variant while all equivalent moves succeeded in the newer trace, so the strategy is not prohibited.",
+            "Device safety snapshot (read_planning_brief): no collision, stage/manipulator idle, signal simulator_no_weld_contact; the captured safe state does not clear future moves, ACE rechecks before execution.",
+            "Deposit geometry is fixed: a 2 um x 4 um rectangle at -40 deg bound to the FIB protection-layer point, with runtime checks of both the FIB and SEM projected gaps against it."
+          ],
+          "parameter_reasons": [
+            "HFW 100 um for all acquisitions: it matches every successful detection in recovery-1793889106404 (pixel 0.0977 um) and resolves the needle where the original 50 um SEM detection failed; the live 200 um observation confirms the needle is visible at wide HFW.",
+            "roi_point choices follow task_context exactly: needle uses extremity_diagonal:230 in SEM and extremity_diagonal:250 in FIB; protection_layer uses topleft in SEM and extremity_left_bottom in FIB; the contact note says to approach the protection layer, not the sample center.",
+            "confidence_threshold 0.25 mirrors the value used in all successful prior executions of these detections.",
+            "Four alternating SEM/ION convergence passes (moves at actions 4, 8, 12, 16, 20, 24, 28, 32) instead of the two used in the failed precedent: each move applies 0.7x of the fresh same-beam error, so multiple passes are needed to shrink the initial ~40 um SEM-frame and ~30 um FIB-frame gaps below the ~1 um half-width of the deposition footprint; every move re-detects from an image acquired after the previous motion, and any move whose axes are already within the fixed 0.2 um threshold reports arrived without moving, so surplus passes are safe no-ops.",
+            "SEM moves precede ION moves within each pass per view_guidance (SEM X/Y first, then FIB X/Z), and movement finishes with an ION move as required by the Safety Gate rule 'movement must finish in ION'.",
+            "Fresh FIB (actions 33-34) and SEM (actions 35-36) views are acquired after the last motion to satisfy deposit_bridge's two-view, post-motion data-lineage requirement; the site is bound to the FIB protection-layer point (detection at action 34) and the needle to the FIB needle detection (action 33).",
+            "deposit_bridge keeps the fixed 2x4 um @ -40 deg geometry (width_um 2, height_um 4, angle_deg -40, offsets 0,0; 2*4=8 <= 24 um^2) and uses depth_um 1.2 within the allowed 0.8-1.5 um range: the original weld failed as weak, so a thicker-than-nominal stitch is justified to hold the sample through the 1 um probe lift.",
+            "verify_lift is included as the final action because the required postcondition is that action's success=true; it independently acquires, lifts 1 um after a fresh collision check, re-detects and compares displacements."
+          ],
+          "stage_rationale": "staged_recovery is enabled (stage 1; 32 actions <= 100 remaining, 9 images <= 40 remaining). A single complete stage is justified because the most recent identical case already executed every move type successfully and failed only on insufficient convergence before deposit; this plan adds the missing convergence passes and the deposit gate independently rechecks the footprint before any material is placed. stage_status=complete because the plan includes deposit_bridge plus verify_lift, which can satisfy the declared postcondition.",
+          "strategy": "Re-acquire the needle at 100 um HFW, alternate SEM X/Y and FIB X/Z 0.7-gain move cycles for four passes ending with an ION move, then take fresh post-motion FIB and SEM views with needle and protection-layer detections, deposit a 1.2 um deep carbon bridge preserving the fixed 2x4 um @ -40 deg geometry, and verify the lift.",
+          "unknowns": [
+            "The exact residual needle-tip offset after four convergence passes is unknown until execution; the deposit safety gate independently rechecks both projected gaps and will refuse safely if they do not fit the footprint.",
+            "Whether the SEM projection stays inside the footprint after the final ION-side convergence is checked by the runtime at deposit time.",
+            "Actual weld contact is established by the simulator at deposition; verify_lift is the authoritative check that the sample follows the probe."
+          ]
+        },
+        "resume_after": "loss_verify_attachment"
+      }
+    },
+    "result": {
+      "accepted": false,
+      "stage": "safety_or_compile",
+      "error": "ValueError: SAFETY_GATE: image_ref must point to acquire_image",
+      "issues": [
+        {
+          "path": "actions[*].refs.image_ref",
+          "code": "safety_or_compile",
+          "message": "ValueError: SAFETY_GATE: image_ref must point to acquire_image"
+        }
+      ]
+    }
+  },
+  {
+    "tool": "validate_plan",
+    "args": {
+      "plan": {
+        "actions": [
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 1,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          }
+        ],
+        "confidence": 0.5,
+        "covered_intent": "recover_dropped_sample",
+        "decision_summary": "probe: single SEM acquisition and needle detection reference"
+      }
+    },
+    "result": {
+      "accepted": false,
+      "stage": "safety_or_compile",
+      "error": "ValueError: SAFETY_GATE: complete stage must execute postcondition action verify_lift",
+      "issues": [
+        {
+          "path": "actions",
+          "code": "safety_or_compile",
+          "message": "ValueError: SAFETY_GATE: complete stage must execute postcondition action verify_lift"
+        }
+      ]
+    }
+  },
+  {
+    "tool": "validate_plan",
+    "args": {
+      "plan": {
+        "actions": [
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 1,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 1,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ELECTRON"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 3,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 2,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 5,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 5,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ION"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 7,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 6,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 9,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 9,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ELECTRON"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 11,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 10,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 13,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 13,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ION"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 15,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 14,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 17,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 17,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ELECTRON"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 19,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 18,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 21,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 21,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ION"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 23,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 22,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 25,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 25,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ELECTRON"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 27,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 26,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 29,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 29,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ION"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 31,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 30,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 33,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 33,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 36,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 36,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "deposit_bridge",
+            "params": {
+              "angle_deg": -40,
+              "depth_um": 1.2,
+              "height_um": 4,
+              "offset_x_um": 0,
+              "offset_y_um": 0,
+              "width_um": 2
+            },
+            "refs": {
+              "needle_ref": {
+                "action_index": 34,
+                "kind": "detected_point"
+              },
+              "sem_needle_ref": {
+                "action_index": 37,
+                "kind": "detected_point"
+              },
+              "sem_site_ref": {
+                "action_index": 38,
+                "kind": "detected_point"
+              },
+              "site_ref": {
+                "action_index": 35,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "verify_lift",
+            "params": {}
+          }
+        ],
+        "confidence": 0.6,
+        "covered_intent": "recover_dropped_sample",
+        "decision_summary": {
+          "facts": [
+            "Failure record (read_planning_brief, event-0042): loss_verify_attachment sample_transport_check raised SAMPLE_LOST because the needle was not resolvable in the 50 um SEM frame while the sample was detected at (10.40, -2.49) um; the latest image 013 shows the detached sample with no attached needle.",
+            "Live bounded observation live-01 (SEM, 200 um HFW, pixel 0.1953 um) resolved the needle confidently at (-74.9, -9.7) um: the needle is far from the sample, so a multi-cycle approach is required and the original 50 um frame was simply too narrow to resolve the needle.",
+            "Experience recovery-1793889106404 (same workflow, identical manipulator root position (-112.47, -9.01, -114.18) um, near-identical sample position) executed the same SEM->ION alternating approach at 100 um HFW with every move succeeding; it failed only at the deposit safety gate with 'needle tip is outside bridge deposition footprint (local offset 1.58, -1.73 um)' because it attempted deposition after too few convergence cycles - the move controller applies only 0.7x the measured image-frame error per call.",
+            "Experience recovery-1793880817653 shows the same strategy reaching sub-um residuals; its single collision occurred on an ION move in an older geometry variant while all equivalent moves succeeded in the newer trace, so the strategy is not prohibited.",
+            "Device safety snapshot (read_planning_brief): no collision, stage/manipulator idle, signal simulator_no_weld_contact; the captured safe state does not clear future moves, ACE rechecks before execution.",
+            "Deposit geometry is fixed: a 2 um x 4 um rectangle at -40 deg bound to the FIB protection-layer point, with runtime checks of both the FIB and SEM projected gaps against it."
+          ],
+          "parameter_reasons": [
+            "HFW 100 um for all acquisitions: it matches every successful detection in recovery-1793889106404 (pixel 0.0977 um) and resolves the needle where the original 50 um SEM detection failed; the live 200 um observation confirms the needle is visible at wide HFW.",
+            "roi_point choices follow task_context exactly: needle uses extremity_diagonal:230 in SEM and extremity_diagonal:250 in FIB; protection_layer uses topleft in SEM and extremity_left_bottom in FIB; the contact note says to approach the protection layer, not the sample center.",
+            "confidence_threshold 0.25 mirrors the value used in all successful prior executions of these detections.",
+            "Four alternating SEM/ION convergence passes (moves at actions 4, 8, 12, 16, 20, 24, 28, 32) instead of the two used in the failed precedent: each move applies 0.7x of the fresh same-beam error, so multiple passes are needed to shrink the initial ~40 um SEM-frame and ~30 um FIB-frame gaps below the ~1 um half-width of the deposition footprint; every move re-detects from an image acquired after the previous motion, and any move whose axes are already within the fixed 0.2 um threshold reports arrived without moving, so surplus passes are safe no-ops.",
+            "SEM moves precede ION moves within each pass per view_guidance (SEM X/Y first, then FIB X/Z), and movement finishes with an ION move as required by the Safety Gate rule 'movement must finish in ION'.",
+            "Fresh FIB (actions 33-35) and SEM (actions 36-38) views are acquired after the last motion to satisfy deposit_bridge's two-view, post-motion data-lineage requirement; the deposit binds needle_ref to the FIB needle detection (action 34), site_ref to the FIB protection-layer detection (action 35), sem_needle_ref to the SEM needle detection (action 37) and sem_site_ref to the SEM protection-layer detection (action 38).",
+            "deposit_bridge keeps the fixed 2x4 um @ -40 deg geometry (width_um 2, height_um 4, angle_deg -40, offsets 0,0; 2*4=8 <= 24 um^2) and uses depth_um 1.2 within the allowed 0.8-1.5 um range: the original weld failed as weak, so a thicker-than-nominal stitch is justified to hold the sample through the 1 um probe lift.",
+            "verify_lift is included as the final action because the required postcondition is that action's success=true; it independently acquires, lifts 1 um after a fresh collision check, re-detects and compares displacements."
+          ],
+          "stage_rationale": "staged_recovery is enabled (stage 1; 39 actions <= 100 remaining, 10 images <= 40 remaining). A single complete stage is justified because the most recent identical case already executed every move type successfully and failed only on insufficient convergence before deposit; this plan adds the missing convergence passes and the deposit gate independently rechecks the footprint before any material is placed. stage_status=complete because the plan includes deposit_bridge plus verify_lift, which can satisfy the declared postcondition.",
+          "strategy": "Re-acquire the needle at 100 um HFW, alternate SEM X/Y and FIB X/Z 0.7-gain move cycles for four passes ending with an ION move, then take fresh post-motion FIB and SEM views with needle and protection-layer detections, deposit a 1.2 um deep carbon bridge preserving the fixed 2x4 um @ -40 deg geometry, and verify the lift.",
+          "unknowns": [
+            "The exact residual needle-tip offset after four convergence passes is unknown until execution; the deposit safety gate independently rechecks both projected gaps and will refuse safely if they do not fit the footprint.",
+            "Whether the SEM projection stays inside the footprint after the final ION-side convergence is checked by the runtime at deposit time.",
+            "Actual weld contact is established by the simulator at deposition; verify_lift is the authoritative check that the sample follows the probe."
+          ]
+        },
+        "resume_after": "loss_verify_attachment"
+      }
+    },
+    "result": {
+      "accepted": true,
+      "compiled_actions": [
+        {
+          "action": "acquire_image",
+          "operation": "acquire_image"
+        },
+        {
+          "action": "detect_target",
+          "operation": "detection"
+        },
+        {
+          "action": "detect_target",
+          "operation": "detection"
+        },
+        {
+          "action": "move_target",
+          "operation": "manipulator_move_to"
+        },
+        {
+          "action": "acquire_image",
+          "operation": "acquire_image"
+        },
+        {
+          "action": "detect_target",
+          "operation": "detection"
+        },
+        {
+          "action": "detect_target",
+          "operation": "detection"
+        },
+        {
+          "action": "move_target",
+          "operation": "manipulator_move_to"
+        },
+        {
+          "action": "acquire_image",
+          "operation": "acquire_image"
+        },
+        {
+          "action": "detect_target",
+          "operation": "detection"
+        },
+        {
+          "action": "detect_target",
+          "operation": "detection"
+        },
+        {
+          "action": "move_target",
+          "operation": "manipulator_move_to"
+        },
+        {
+          "action": "acquire_image",
+          "operation": "acquire_image"
+        },
+        {
+          "action": "detect_target",
+          "operation": "detection"
+        },
+        {
+          "action": "detect_target",
+          "operation": "detection"
+        },
+        {
+          "action": "move_target",
+          "operation": "manipulator_move_to"
+        },
+        {
+          "action": "acquire_image",
+          "operation": "acquire_image"
+        },
+        {
+          "action": "detect_target",
+          "operation": "detection"
+        },
+        {
+          "action": "detect_target",
+          "operation": "detection"
+        },
+        {
+          "action": "move_target",
+          "operation": "manipulator_move_to"
+        },
+        {
+          "action": "acquire_image",
+          "operation": "acquire_image"
+        },
+        {
+          "action": "detect_target",
+          "operation": "detection"
+        },
+        {
+          "action": "detect_target",
+          "operation": "detection"
+        },
+        {
+          "action": "move_target",
+          "operation": "manipulator_move_to"
+        },
+        {
+          "action": "acquire_image",
+          "operation": "acquire_image"
+        },
+        {
+          "action": "detect_target",
+          "operation": "detection"
+        },
+        {
+          "action": "detect_target",
+          "operation": "detection"
+        },
+        {
+          "action": "move_target",
+          "operation": "manipulator_move_to"
+        },
+        {
+          "action": "acquire_image",
+          "operation": "acquire_image"
+        },
+        {
+          "action": "detect_target",
+          "operation": "detection"
+        },
+        {
+          "action": "detect_target",
+          "operation": "detection"
+        },
+        {
+          "action": "move_target",
+          "operation": "manipulator_move_to"
+        },
+        {
+          "action": "acquire_image",
+          "operation": "acquire_image"
+        },
+        {
+          "action": "detect_target",
+          "operation": "detection"
+        },
+        {
+          "action": "detect_target",
+          "operation": "detection"
+        },
+        {
+          "action": "acquire_image",
+          "operation": "acquire_image"
+        },
+        {
+          "action": "detect_target",
+          "operation": "detection"
+        },
+        {
+          "action": "detect_target",
+          "operation": "detection"
+        },
+        {
+          "action": "deposit_bridge",
+          "operation": "general_deposition"
+        },
+        {
+          "action": "verify_lift",
+          "operation": "verify_lift"
+        }
+      ],
+      "note": "This is a dry-run compile, not device execution or postcondition success."
+    }
+  },
+  {
+    "tool": "submit_plan",
+    "args": {
+      "plan": {
+        "actions": [
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 1,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 1,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ELECTRON"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 3,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 2,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 5,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 5,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ION"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 7,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 6,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 9,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 9,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ELECTRON"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 11,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 10,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 13,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 13,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ION"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 15,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 14,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 17,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 17,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ELECTRON"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 19,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 18,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 21,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 21,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ION"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 23,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 22,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 25,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 25,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ELECTRON"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 27,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 26,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 29,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 29,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_target",
+            "params": {
+              "beam_type": "ION"
+            },
+            "refs": {
+              "dst_ref": {
+                "action_index": 31,
+                "kind": "detected_point"
+              },
+              "src_ref": {
+                "action_index": 30,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ION",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:250",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 33,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_left_bottom",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 33,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "beam_type": "ELECTRON",
+              "hfw_um": 100
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "extremity_diagonal:230",
+              "target_label": "needle"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 36,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.25,
+              "roi_point": "topleft",
+              "target_label": "protection_layer"
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 36,
+                "beam_type": "ELECTRON",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "deposit_bridge",
+            "params": {
+              "angle_deg": -40,
+              "depth_um": 1.2,
+              "height_um": 4,
+              "offset_x_um": 0,
+              "offset_y_um": 0,
+              "width_um": 2
+            },
+            "refs": {
+              "needle_ref": {
+                "action_index": 34,
+                "kind": "detected_point"
+              },
+              "sem_needle_ref": {
+                "action_index": 37,
+                "kind": "detected_point"
+              },
+              "sem_site_ref": {
+                "action_index": 38,
+                "kind": "detected_point"
+              },
+              "site_ref": {
+                "action_index": 35,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "verify_lift",
+            "params": {}
+          }
+        ],
+        "confidence": 0.6,
+        "covered_intent": "recover_dropped_sample",
+        "decision_summary": {
+          "facts": [
+            "Failure record (read_planning_brief, event-0042): loss_verify_attachment sample_transport_check raised SAMPLE_LOST because the needle was not resolvable in the 50 um SEM frame while the sample was detected at (10.40, -2.49) um; the latest image 013 shows the detached sample with no attached needle.",
+            "Live bounded observation live-01 (SEM, 200 um HFW, pixel 0.1953 um) resolved the needle confidently at (-74.9, -9.7) um: the needle is far from the sample, so a multi-cycle approach is required and the original 50 um frame was simply too narrow to resolve the needle.",
+            "Experience recovery-1793889106404 (same workflow, identical manipulator root position (-112.47, -9.01, -114.18) um, near-identical sample position) executed the same SEM->ION alternating approach at 100 um HFW with every move succeeding; it failed only at the deposit safety gate with 'needle tip is outside bridge deposition footprint (local offset 1.58, -1.73 um)' because it attempted deposition after too few convergence cycles - the move controller applies only 0.7x the measured image-frame error per call.",
+            "Experience recovery-1793880817653 shows the same strategy reaching sub-um residuals; its single collision occurred on an ION move in an older geometry variant while all equivalent moves succeeded in the newer trace, so the strategy is not prohibited.",
+            "Device safety snapshot (read_planning_brief): no collision, stage/manipulator idle, signal simulator_no_weld_contact; the captured safe state does not clear future moves, ACE rechecks before execution.",
+            "Deposit geometry is fixed: a 2 um x 4 um rectangle at -40 deg bound to the FIB protection-layer point, with runtime checks of both the FIB and SEM projected gaps against it."
+          ],
+          "parameter_reasons": [
+            "HFW 100 um for all acquisitions: it matches every successful detection in recovery-1793889106404 (pixel 0.0977 um) and resolves the needle where the original 50 um SEM detection failed; the live 200 um observation confirms the needle is visible at wide HFW.",
+            "roi_point choices follow task_context exactly: needle uses extremity_diagonal:230 in SEM and extremity_diagonal:250 in FIB; protection_layer uses topleft in SEM and extremity_left_bottom in FIB; the contact note says to approach the protection layer, not the sample center.",
+            "confidence_threshold 0.25 mirrors the value used in all successful prior executions of these detections.",
+            "Four alternating SEM/ION convergence passes (moves at actions 4, 8, 12, 16, 20, 24, 28, 32) instead of the two used in the failed precedent: each move applies 0.7x of the fresh same-beam error, so multiple passes are needed to shrink the initial ~40 um SEM-frame and ~30 um FIB-frame gaps below the ~1 um half-width of the deposition footprint; every move re-detects from an image acquired after the previous motion, and any move whose axes are already within the fixed 0.2 um threshold reports arrived without moving, so surplus passes are safe no-ops.",
+            "SEM moves precede ION moves within each pass per view_guidance (SEM X/Y first, then FIB X/Z), and movement finishes with an ION move as required by the Safety Gate rule 'movement must finish in ION'.",
+            "Fresh FIB (actions 33-35) and SEM (actions 36-38) views are acquired after the last motion to satisfy deposit_bridge's two-view, post-motion data-lineage requirement; the deposit binds needle_ref to the FIB needle detection (action 34), site_ref to the FIB protection-layer detection (action 35), sem_needle_ref to the SEM needle detection (action 37) and sem_site_ref to the SEM protection-layer detection (action 38).",
+            "deposit_bridge keeps the fixed 2x4 um @ -40 deg geometry (width_um 2, height_um 4, angle_deg -40, offsets 0,0; 2*4=8 <= 24 um^2) and uses depth_um 1.2 within the allowed 0.8-1.5 um range: the original weld failed as weak, so a thicker-than-nominal stitch is justified to hold the sample through the 1 um probe lift.",
+            "verify_lift is included as the final action because the required postcondition is that action's success=true; it independently acquires, lifts 1 um after a fresh collision check, re-detects and compares displacements."
+          ],
+          "stage_rationale": "staged_recovery is enabled (stage 1; 39 actions <= 100 remaining, 10 images <= 40 remaining). A single complete stage is justified because the most recent identical case already executed every move type successfully and failed only on insufficient convergence before deposit; this plan adds the missing convergence passes and the deposit gate independently rechecks the footprint before any material is placed. stage_status=complete because the plan includes deposit_bridge plus verify_lift, which can satisfy the declared postcondition.",
+          "strategy": "Re-acquire the needle at 100 um HFW, alternate SEM X/Y and FIB X/Z 0.7-gain move cycles for four passes ending with an ION move, then take fresh post-motion FIB and SEM views with needle and protection-layer detections, deposit a 1.2 um deep carbon bridge preserving the fixed 2x4 um @ -40 deg geometry, and verify the lift.",
+          "unknowns": [
+            "The exact residual needle-tip offset after four convergence passes is unknown until execution; the deposit safety gate independently rechecks both projected gaps and will refuse safely if they do not fit the footprint.",
+            "Whether the SEM projection stays inside the footprint after the final ION-side convergence is checked by the runtime at deposit time.",
+            "Actual weld contact is established by the simulator at deposition; verify_lift is the authoritative check that the sample follows the probe."
+          ]
+        },
+        "resume_after": "loss_verify_attachment"
+      }
+    },
+    "result": {
+      "accepted": true,
+      "action_count": 40
+    }
+  }
+]

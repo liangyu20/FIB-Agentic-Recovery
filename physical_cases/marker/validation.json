@@ -1,0 +1,41 @@
+[
+  {
+    "tool": "validate_plan",
+    "accepted": true,
+    "stage": null,
+    "issues": [],
+    "error": null,
+    "compiled_actions": [
+      {
+        "action": "acquire_image",
+        "operation": "acquire_image"
+      },
+      {
+        "action": "detect_target",
+        "operation": "detection"
+      },
+      {
+        "action": "move_stage",
+        "operation": "stage_move_to"
+      },
+      {
+        "action": "acquire_image",
+        "operation": "acquire_image"
+      },
+      {
+        "action": "verify_target",
+        "operation": "detection"
+      }
+    ],
+    "action_count": null
+  },
+  {
+    "tool": "submit_plan",
+    "accepted": true,
+    "stage": null,
+    "issues": [],
+    "error": null,
+    "compiled_actions": null,
+    "action_count": 5
+  }
+]

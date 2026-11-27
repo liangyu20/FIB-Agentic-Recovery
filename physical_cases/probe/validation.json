@@ -1,0 +1,80 @@
+[
+  {
+    "tool": "validate_plan",
+    "accepted": false,
+    "stage": "safety_or_compile",
+    "issues": [
+      {
+        "path": "actions[*].refs",
+        "code": "safety_or_compile",
+        "message": "ValueError: SAFETY_GATE: unsupported refs for move_target"
+      }
+    ],
+    "error": "ValueError: SAFETY_GATE: unsupported refs for move_target",
+    "compiled_actions": null,
+    "action_count": null
+  },
+  {
+    "tool": "validate_plan",
+    "accepted": true,
+    "stage": null,
+    "issues": [],
+    "error": null,
+    "compiled_actions": [
+      {
+        "action": "acquire_image",
+        "operation": "acquire_image"
+      },
+      {
+        "action": "detect_target",
+        "operation": "detection"
+      },
+      {
+        "action": "move_target",
+        "operation": "manipulator_move_to"
+      },
+      {
+        "action": "acquire_image",
+        "operation": "acquire_image"
+      },
+      {
+        "action": "detect_target",
+        "operation": "detection"
+      },
+      {
+        "action": "move_target",
+        "operation": "manipulator_move_to"
+      },
+      {
+        "action": "acquire_image",
+        "operation": "acquire_image"
+      },
+      {
+        "action": "detect_target",
+        "operation": "detection"
+      },
+      {
+        "action": "move_target",
+        "operation": "manipulator_move_to"
+      },
+      {
+        "action": "acquire_image",
+        "operation": "acquire_image"
+      },
+      {
+        "action": "verify_target",
+        "operation": "detection"
+      }
+    ],
+    "action_count": null
+  },
+  {
+    "tool": "submit_plan",
+    "accepted": true,
+    "stage": null,
+    "issues": [],
+    "error": null,
+    "compiled_actions": null,
+    "action_count": 11
+  }
+]

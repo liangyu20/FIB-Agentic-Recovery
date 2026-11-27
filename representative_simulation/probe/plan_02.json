@@ -1,0 +1,66 @@
+{
+  "actions": [
+    {
+      "action": "acquire_image",
+      "params": {
+        "hfw_um": 100
+      }
+    },
+    {
+      "action": "detect_target",
+      "params": {
+        "confidence_threshold": 0.5
+      },
+      "refs": {
+        "image_ref": {
+          "kind": "acquired_image",
+          "action_index": 1,
+          "beam_type": "ION"
+        }
+      }
+    },
+    {
+      "action": "move_target",
+      "params": {
+        "dst_x": 0,
+        "dst_y": 10
+      },
+      "refs": {
+        "src_ref": {
+          "kind": "detected_point",
+          "action_index": 2
+        },
+        "dst_ref": {
+          "kind": "image_point",
+          "image_action_index": 1,
+          "beam_type": "ION",
+          "frame": "image_center",
+          "unit": "um"
+        }
+      }
+    },
+    {
+      "action": "acquire_image",
+      "params": {
+        "hfw_um": 50
+      }
+    },
+    {
+      "action": "verify_target",
+      "params": {
+        "confidence_threshold": 0.5
+      },
+      "refs": {
+        "image_ref": {
+          "kind": "acquired_image",
+          "action_index": 4,
+          "beam_type": "ION"
+        }
+      }
+    }
+  ],
+  "covered_intent": "target_acquisition",
+  "resume_after": "fib_detect_needle",
+  "confidence": 0.6,
+  "generated_by": "ace_agent"
+}

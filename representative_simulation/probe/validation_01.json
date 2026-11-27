@@ -1,0 +1,14 @@
+{
+  "record_kind": "validated_plan_and_postcondition",
+  "planning_attempt": 1,
+  "plan_status": "accepted",
+  "beam": "ELECTRON",
+  "plan": "plan_01.json",
+  "postcondition": {
+    "passed": true,
+    "type": "target_visible",
+    "label": "needle",
+    "hfw_um": 50,
+    "matched_targets": 1
+  }
+}

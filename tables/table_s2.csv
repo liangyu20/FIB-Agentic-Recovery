@@ -1,0 +1,4 @@
+﻿Task,Randomized condition,Required check
+Probe outside view,"Probe displacement: Δx ∈ [−25, −5] µm; Δy ∈ [−12, 12] µm; Δz ∈ [0, 12] µm.",Probe visible in the task-specified 50 µm SEM/FIB views after recovery.
+Marker outside view,"Marker milling position: x, y ∈ [−45, 45] µm. Stage displacement: principal component 75–95 µm (even seeds) or 120–170 µm (odd seeds), with random sign and axis; orthogonal offset [−18, 18] µm.",Marker detected in a new 50 µm view after recovery.
+Insufficient depth,Initial three-trench depth: 3–5 µm; prescribed target extent: 8–10 µm.,New image measurement and independent final mesh depth meet the prescribed threshold.

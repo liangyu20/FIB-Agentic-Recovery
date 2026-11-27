@@ -1,0 +1,3 @@
+order,image,beam,hfw_um,role,measured_depth_um,target_depth_um,measurement_method
+1,images/01.png,ELECTRON,50,before supplementary milling,,,
+2,images/02.png,ELECTRON,50,after supplementary milling,7.749053480675423,7.0,mask_vertical_scanline

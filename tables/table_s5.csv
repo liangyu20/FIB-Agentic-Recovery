@@ -1,0 +1,19 @@
+﻿Exact rejection reason,Count
+"move_target requires explicit ['dst_ref', 'src_ref']",11
+image_ref must be an acquired_image,9
+"move_stage requires explicit ['dst_ref', 'src_ref']",8
+image_action_index must refer to an earlier plan action,6
+unsupported refs for verify_target,3
+action_index must refer to an earlier plan action,3
+detect_target requires explicit ['image_ref'],3
+unsupported refs for move_stage,3
+unsupported refs for detect_target,2
+move_target requires parameter dst_x,1
+unsupported refs for move_target,1
+move_target parameter dst_x is outside the allowed range,1
+verify_target requires explicit ['image_ref'],1
+src_ref must point to detect_target,1
+unsupported refs for verify_depth,1
+verify_depth requires explicit ['detection_ref'],1
+detection_ref must be a detection_result,1
+image_ref must point to acquire_image,1

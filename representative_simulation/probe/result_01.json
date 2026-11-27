@@ -1,0 +1,27 @@
+{
+  "record_kind": "selected_run_summary",
+  "run_id": "cli-c9f1da585f21",
+  "status": "success",
+  "preparation": [
+    "protection layer",
+    "three deep trenches",
+    "sidewall polish",
+    "U-cut"
+  ],
+  "postconditions": [
+    {
+      "passed": true,
+      "type": "target_visible",
+      "label": "needle",
+      "hfw_um": 50,
+      "matched_targets": 1
+    },
+    {
+      "passed": true,
+      "type": "target_visible",
+      "label": "needle",
+      "hfw_um": 50,
+      "matched_targets": 1
+    }
+  ]
+}

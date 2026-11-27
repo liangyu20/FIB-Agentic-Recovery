@@ -1,0 +1,61 @@
+fault,seed,randomized_condition,first_failure_image_sha256,safe_stop_run_id
+probe,201,"{""dx"": -11, ""dy"": -6, ""dz"": 11}",853ee93d2053b72547a981e0f6ed2de345be0129a8f1035d56ee599e748e64fb,cli-c87f66ce760d
+probe,202,"{""dx"": -25, ""dy"": 5, ""dz"": 10}",9e1e61a8e452d8bc17fbc8b8adfc3a407f2878b599ea459408107bce36e262d0,cli-d55e295f835f
+probe,203,"{""dx"": -9, ""dy"": 5, ""dz"": 0}",2e5db2bed5c7eabc42b9228d775df0f904881da938f1f3aa7622c45f78e2e97e,cli-d87c7398f32b
+probe,204,"{""dx"": -5, ""dy"": -3, ""dz"": 6}",1795008085cbad289e004f9ededd8abdd8f9e55345660ff718b1fef6502f6dd0,cli-9342406cd383
+probe,205,"{""dx"": -11, ""dy"": 0, ""dz"": 4}",ae57cafbe8a4122f644d39cf47bf64ba6309804312911adbbccae657b0aaca58,cli-64794009e827
+probe,206,"{""dx"": -14, ""dy"": -8, ""dz"": 10}",d56776560e65b553097e384c820900ef6e5c46edb1de3a61e55f06517ab2bdd1,cli-c9e72d50340c
+probe,207,"{""dx"": -23, ""dy"": 10, ""dz"": 10}",bcae39478f6204d83372a2cfcff0ec2136ada45185918832594fbdeb6f0252e3,cli-1be781fc1005
+probe,208,"{""dx"": -23, ""dy"": -8, ""dz"": 0}",fb0884929929874b2d6d8b12718d303e53e6f6f06772880d719ef200b2b86eb1,cli-e796bad42184
+probe,209,"{""dx"": -5, ""dy"": 0, ""dz"": 6}",ad73de0d1df0f18e8b8929d1169ba89b4af3984f588f4c6c7e21541ee86c7f9f,cli-2e5066082e68
+probe,210,"{""dx"": -13, ""dy"": -2, ""dz"": 2}",1822d7f386e1ff69f88e3b17d05f09248394944cbd1eb31cccdb37c87330ee1c,cli-d7b74acde183
+probe,211,"{""dx"": -22, ""dy"": 1, ""dz"": 3}",0e207cab9ae7bacd451f4a5cd482b2e759901c999fff5c3e60b9390124f7e795,cli-d6fa82446f13
+probe,212,"{""dx"": -7, ""dy"": 8, ""dz"": 11}",3143969240b0482b46ec03e84594fd33b65208084cfa3027e86564ba7dca72c3,cli-f0937c3e1b6f
+probe,213,"{""dx"": -14, ""dy"": 0, ""dz"": 1}",1518bf3f20e5aa4776834ddbe7d92fbf1a1cc9b94d898efe5167058639888fbb,cli-9421b8272ab1
+probe,214,"{""dx"": -23, ""dy"": 10, ""dz"": 0}",2226ab0ac79cf7caa7bd4f00a40225a13ee3315d0a386a23a8a42103aea94a08,cli-0516c2361692
+probe,215,"{""dx"": -18, ""dy"": 8, ""dz"": 9}",a9342113d365a1ca12af6cf2d6ef8321dbfc55676f84a4dc35f3a6dbb790f338,cli-72b196fd935e
+probe,216,"{""dx"": -19, ""dy"": 0, ""dz"": 12}",ddc8ea9d964ebb8f3dcbd197d056a6833ee881fa59f2237eaa1246d9b93c025e,cli-25a3ae940fac
+probe,217,"{""dx"": -23, ""dy"": 7, ""dz"": 11}",7258ab2ca317c494bce23ba99e456403064d1a4f0d795ca054e466b5e57af551,cli-7abd4f74b747
+probe,218,"{""dx"": -14, ""dy"": 1, ""dz"": 2}",1be9a5e5d54807c826710169c0f06e9309daf5dae82f710dfe9784e1b10f4ec7,cli-b67ba1635919
+probe,219,"{""dx"": -14, ""dy"": 0, ""dz"": 11}",5e98490858c9e39ab62a4b42e81ba4a6f3c6dbc669bded88912dd6131b144e00,cli-cb8f3bbddc94
+probe,220,"{""dx"": -6, ""dy"": 12, ""dz"": 11}",a947c53ab0751eec09a58f531db22028e9b0557c7ba3a02672d9459c88fbe38a,cli-269b8ba603c7
+marker,201,"{""distance_band"": ""far"", ""hidden_x"": -137, ""hidden_y"": -10, ""marker_x"": -4, ""marker_y"": -21}",ab53511d116026d0d74b72739283212d1b52bb9f0c986e0bccbf9d1de81d6b26,cli-789b0c44c80b
+marker,202,"{""distance_band"": ""near"", ""hidden_x"": 75, ""hidden_y"": 26, ""marker_x"": -11, ""marker_y"": 9}",00dc62ac0e18de7ccd08be1c80755a071f7a448447f98179479af3efcd26470b,cli-c9a1d9e8edff
+marker,203,"{""distance_band"": ""far"", ""hidden_x"": 44, ""hidden_y"": -135, ""marker_x"": 32, ""marker_y"": 28}",e49d1cbb06a6b0b56f54acb945cc7c592831acdab43518dd66d03179b4601fa6,cli-3bc8cfbc233a
+marker,204,"{""distance_band"": ""near"", ""hidden_x"": 50, ""hidden_y"": 5, ""marker_x"": -32, ""marker_y"": 16}",9754c4a4039381af09de701a16e985d1d7a87243be48681afa8e54058f2d446e,cli-10b919854d9c
+marker,205,"{""distance_band"": ""far"", ""hidden_x"": -7, ""hidden_y"": 195, ""marker_x"": -5, ""marker_y"": 25}",2fd95c936c5460f3ec1d28c45833ccd229e4d9d945fb69e36978f77e18bad5b8,cli-8c3a3c656da8
+marker,206,"{""distance_band"": ""near"", ""hidden_x"": 37, ""hidden_y"": 92, ""marker_x"": 41, ""marker_y"": 16}",c704297f87b7fb1b8a6dfea498aa32e93ca98ec38508f518396395ba272afc45,cli-d3bc206c2fa9
+marker,207,"{""distance_band"": ""far"", ""hidden_x"": 45, ""hidden_y"": -132, ""marker_x"": 38, ""marker_y"": -10}",65dbccd6a0ca0746df3a3b2c6098b5cd79fa5ba924cbe7270c4cc8e22716c073,cli-9ef7e594e70b
+marker,208,"{""distance_band"": ""near"", ""hidden_x"": -35, ""hidden_y"": 53, ""marker_x"": -40, ""marker_y"": -25}",ef5efa48ff44bf3e1cd27f1c4f3696d0365270669eba1eaee2a7214de2e2f04d,cli-12df0456c122
+marker,209,"{""distance_band"": ""far"", ""hidden_x"": -3, ""hidden_y"": 156, ""marker_x"": 4, ""marker_y"": 26}",882b51d3981211f6b8d3eb2f2d31aad9e748b16c12858e13d052d3fd7f4e9fff,cli-97bbd51518b0
+marker,210,"{""distance_band"": ""near"", ""hidden_x"": 138, ""hidden_y"": 7, ""marker_x"": 43, ""marker_y"": -8}",b6a58305ef1d97a14734de38e99086482e2a72666979f0165b1528183ce8caf1,cli-5978702ca920
+marker,211,"{""distance_band"": ""far"", ""hidden_x"": -171, ""hidden_y"": -44, ""marker_x"": -28, ""marker_y"": -38}",f4e0ce49916d78de99fd8c75a4077b47d8b933b4eca7959906d45498cd8dd0c5,cli-9d6e176184d8
+marker,212,"{""distance_band"": ""near"", ""hidden_x"": 54, ""hidden_y"": 82, ""marker_x"": 39, ""marker_y"": 4}",2540c8ad23de2710dc919503cf50225d7ef4809ea25933a44eaea7feb0035864,cli-ca1564217a5a
+marker,213,"{""distance_band"": ""far"", ""hidden_x"": 149, ""hidden_y"": 52, ""marker_x"": -9, ""marker_y"": 44}",84c80f8c545eac47adb43e1e3df31ab517a56fd9c4ad7fe06c6343ebd21f59a0,cli-9ddc28cfa58e
+marker,214,"{""distance_band"": ""near"", ""hidden_x"": 113, ""hidden_y"": 9, ""marker_x"": 18, ""marker_y"": 26}",92ff90e5ddafc2f889560c451d6dc232750b92e70e072aee51e3a081fa91fb73,cli-27f362e4ace5
+marker,215,"{""distance_band"": ""far"", ""hidden_x"": 4, ""hidden_y"": 114, ""marker_x"": -7, ""marker_y"": -19}",ce85bfb635bd6636b97fa460055964056f87a832827eed3ec15d9f5f33fde881,cli-f6c99d10bf9f
+marker,216,"{""distance_band"": ""near"", ""hidden_x"": -89, ""hidden_y"": 36, ""marker_x"": -6, ""marker_y"": 27}",6976515f2b6ff22dd40f21c1db35b2482afdd33875ef27dfd0fe7b55f28445d6,cli-0f46b9e929fe
+marker,217,"{""distance_band"": ""far"", ""hidden_x"": 7, ""hidden_y"": 104, ""marker_x"": -11, ""marker_y"": -18}",c9434927fc2f8134b16ab13400b787e06a9aa460f9020ec3d35cca2b206815d9,cli-ebd6a197f446
+marker,218,"{""distance_band"": ""near"", ""hidden_x"": 37, ""hidden_y"": -87, ""marker_x"": 26, ""marker_y"": 4}",a32a565f221ec95b19be37d6effccc03a1c2731ef1354a73d5007ea1cfc97895,cli-0af89ad62cfc
+marker,219,"{""distance_band"": ""far"", ""hidden_x"": 98, ""hidden_y"": -53, ""marker_x"": -29, ""marker_y"": -44}",1fe28854e3a5c1bb77037439eb79bdd8b8b8f4be1792fe6b601c9e8db28b2ed5,cli-d9a0b4f13578
+marker,220,"{""distance_band"": ""near"", ""hidden_x"": 97, ""hidden_y"": 31, ""marker_x"": 21, ""marker_y"": 26}",06fdd3be02bb7d3e90f0a221c494cb082267139380ccb1d7de0bd609c939c474,cli-8978f45d4b3d
+depth,201,"{""initial_depth"": 3, ""required_y_um"": 9}",2d2a13c4d255b61900802cf12fdd1f20e0ba5a1dc78f3497dfa6223f2b5db461,cli-1c91d1fbe6d2
+depth,202,"{""initial_depth"": 4, ""required_y_um"": 8}",6fca7ac565fd978aee44488e44a5d118652be8b8e14d5eb0094e85ac6a1e8957,cli-2c296ba59931
+depth,203,"{""initial_depth"": 3, ""required_y_um"": 10}",17270f1485d10788da5b5c61b7fb84d47e6406cb61301a8ce49958f14976dcdc,cli-4dbf99287597
+depth,204,"{""initial_depth"": 5, ""required_y_um"": 10}",379a47d23df3e4f5e60f3f8c2d0b89549f2748ce1bba5474fa41d0a4785b0dd1,cli-99646f8be43c
+depth,205,"{""initial_depth"": 5, ""required_y_um"": 9}",9e2d4fc1d0a15bfdefe5af97f4c4d86954181aa90547a5afecb6916f7c0d9cab,cli-68ea76c8a0ef
+depth,206,"{""initial_depth"": 3, ""required_y_um"": 9}",891b52a6fec4075035df11fb0c0bb3894105740fba2be33e5c6dedaca29cd6b3,cli-0be5661cb3bb
+depth,207,"{""initial_depth"": 5, ""required_y_um"": 9}",7c4e30a7b10132fa8d3691dd1312728cbd21402fb4c8c51077017fcefc8a82de,cli-9f18b7c1ba77
+depth,208,"{""initial_depth"": 3, ""required_y_um"": 9}",732066d9b49eb04c445662d47d3e7a63ee866581b746f25214ae80ddaee32b0f,cli-e5af21805008
+depth,209,"{""initial_depth"": 5, ""required_y_um"": 10}",84b357f34b5b8a8d0cd4a1be3d6b2c2575b4ec7c4a2977500e72d2a3135d0e68,cli-52a43d2225f9
+depth,210,"{""initial_depth"": 4, ""required_y_um"": 10}",91bea36eb4f6f970776587ff8b6cd2d26b6cd2d5ffa26389eac3dfecf5903c48,cli-54be31585baf
+depth,211,"{""initial_depth"": 3, ""required_y_um"": 8}",9d1f5c948bac63608cbc488f15e23be536588557011daf65035e454ddc2ed138,cli-3e3d8fa24393
+depth,212,"{""initial_depth"": 5, ""required_y_um"": 10}",a3864eb020b6f5d7f1ef7f200f5e16223a945a7f5a97ff11a3c5df2ce9b942ad,cli-d4d13f2b8a4f
+depth,213,"{""initial_depth"": 3, ""required_y_um"": 9}",59f28745840519873c0234e65dc4f24d6c6f27827f9a7eb73d4924a3d80b38f4,cli-09c41bede102
+depth,214,"{""initial_depth"": 3, ""required_y_um"": 9}",5e8aa11c725a01c1f1d6ac4b494db18bedeb979abc7cdc361cd37a2ad0a4714b,cli-47130048ff49
+depth,215,"{""initial_depth"": 3, ""required_y_um"": 8}",0d8157e2bc8dfc638fbf390d5cacbf43742f28490d8be63d4050eaec5d86d2f9,cli-4f81abeb368e
+depth,216,"{""initial_depth"": 3, ""required_y_um"": 9}",d83c929f5c34221a6fcec55fe7bc2f214ed2d9bceb867e49a2761f14841585c5,cli-03d31c653351
+depth,217,"{""initial_depth"": 5, ""required_y_um"": 10}",db395eca0e56035407507f4651e1b0224d17ab93bbbf35f9a90b4259affc2936,cli-c0c49571f0e3
+depth,218,"{""initial_depth"": 3, ""required_y_um"": 8}",eaaf090789f49992063cdbaf788df15651f0c4ff28d306fdf01cf263f0fb1f8c,cli-55f888909c60
+depth,219,"{""initial_depth"": 5, ""required_y_um"": 10}",fed0206671f86eff4d26eeb8a0f6e134544c8b8b1f701988a6065fb600edb4b1,cli-40a3f009ec37
+depth,220,"{""initial_depth"": 4, ""required_y_um"": 10}",6fd8b4fcefd2654c2aee94d8881fa1e6d41f708876deccc9637b4b0e41fae350,cli-15783bee35f5

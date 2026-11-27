@@ -1,0 +1,16 @@
+strategy,fault,n,accepted,acceptance_basis,source_index
+Safe stop,probe,20,0,initial cohort independent oracle,cohort/initial_runs.csv
+Safe stop,marker,20,0,initial cohort independent oracle,cohort/initial_runs.csv
+Safe stop,depth,20,0,initial cohort independent oracle,cohort/initial_runs.csv
+Fixed retry,probe,20,0,initial cohort independent oracle,cohort/initial_runs.csv
+Fixed retry,marker,20,0,initial cohort independent oracle,cohort/initial_runs.csv
+Fixed retry,depth,20,0,original milling node replay followed by image-based depth check,analysis/fixed_process_retry_depth.csv
+Agent without retrieved experience,probe,20,12,initial cohort independent oracle,cohort/initial_runs.csv
+Agent without retrieved experience,marker,20,15,initial cohort independent oracle,cohort/initial_runs.csv
+Agent without retrieved experience,depth,20,20,final mesh at inner 25% near protective layer,mesh_readback/table_s3_exact_readback_and_profile_index.csv
+Agent with reviewed experience,probe,20,20,selected reported run independent oracle,cohort/reviewed_experience_runs.csv
+Agent with reviewed experience,marker,20,20,selected reported run independent oracle,cohort/reviewed_experience_runs.csv
+Agent with reviewed experience,depth,20,20,final mesh at inner 25% near protective layer,mesh_readback/table_s3_exact_readback_and_profile_index.csv
+Rule controller,probe,20,20,initial cohort independent oracle,cohort/initial_runs.csv
+Rule controller,marker,20,20,initial cohort independent oracle,cohort/initial_runs.csv
+Rule controller,depth,20,11,final mesh at inner 25% near protective layer,mesh_readback/table_s3_exact_readback_and_profile_index.csv

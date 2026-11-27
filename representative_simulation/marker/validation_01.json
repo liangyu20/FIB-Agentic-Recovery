@@ -1,0 +1,174 @@
+[
+  {
+    "tool": "validate_plan",
+    "args": {
+      "plan": {
+        "actions": [
+          {
+            "action": "acquire_image",
+            "params": {
+              "hfw_um": 400
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.3
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 1,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_stage",
+            "params": {
+              "dst_x": 0,
+              "dst_y": 0
+            },
+            "refs": {
+              "dst_ref": {
+                "beam_type": "ION",
+                "frame": "image_center",
+                "image_action_index": 1,
+                "kind": "image_point",
+                "unit": "um"
+              },
+              "src_ref": {
+                "action_index": 2,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "hfw_um": 50
+            }
+          },
+          {
+            "action": "verify_target",
+            "params": {
+              "confidence_threshold": 0.5
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 4,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          }
+        ],
+        "confidence": 0.6,
+        "covered_intent": "marker_acquisition",
+        "decision_summary": "Observed facts: the workflow failed at node marker_detect with TARGET_NOT_FOUND (read_planning_brief); event-0022 records 'no detection from inference service' for scene all_scenes on the 50 um ION image; the latest 1024x1024 ION frame (sha256 6e7175ae...) contains no confidently detectable marker at 50 um HFW. Event history shows the marker was milled at the origin stage position (event-0012, mill_cross_marker) and the stage was then deliberately moved away (event-0016, marker_stage_hide), leaving the stage at x=75, y=26 (device snapshot). The most likely cause is that the marker lies outside the narrow 50 um field after the stage-hide move, not that the marker is missing. Unknowns: the exact off-frame marker offset; whether it lies within a 400 um field. Strategy: repeat detection at the same 50 um conditions would add no information, so instead (1) acquire a wide 400 um ION search frame (contract maximum), (2) detect the marker there with a relaxed threshold 0.3 to tolerate its smaller apparent size at low magnification, (3) move the stage to bring the detected marker (src_ref from action 2) to image center (dst 0,0 um; threshold 5 um fixed), then (4) acquire a fresh 50 um ION frame and (5) verify the marker at the workflow's declared threshold 0.5, matching the required postcondition target_visible(marker, hfw=50 um). Numerical choices: 400 um maximizes search coverage within the 4 remaining recovery images; 0.3 search threshold widens acceptance for a small low-mag target; 0.5 verify threshold matches the original workflow threshold; dst (0,0) centers the marker well inside the +/-25 um half-field of the 50 um view. The captured safety snapshot shows the manipulator parked, no collision, stage idle; ACE rechecks clearance before each executed move.",
+        "resume_after": "marker_detect"
+      }
+    },
+    "result": {
+      "accepted": true,
+      "compiled_actions": [
+        {
+          "action": "acquire_image",
+          "operation": "acquire_image"
+        },
+        {
+          "action": "detect_target",
+          "operation": "detection"
+        },
+        {
+          "action": "move_stage",
+          "operation": "stage_move_to"
+        },
+        {
+          "action": "acquire_image",
+          "operation": "acquire_image"
+        },
+        {
+          "action": "verify_target",
+          "operation": "detection"
+        }
+      ],
+      "note": "This is a dry-run compile, not device execution or postcondition success."
+    }
+  },
+  {
+    "tool": "submit_plan",
+    "args": {
+      "plan": {
+        "actions": [
+          {
+            "action": "acquire_image",
+            "params": {
+              "hfw_um": 400
+            }
+          },
+          {
+            "action": "detect_target",
+            "params": {
+              "confidence_threshold": 0.3
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 1,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          },
+          {
+            "action": "move_stage",
+            "params": {
+              "dst_x": 0,
+              "dst_y": 0
+            },
+            "refs": {
+              "dst_ref": {
+                "beam_type": "ION",
+                "frame": "image_center",
+                "image_action_index": 1,
+                "kind": "image_point",
+                "unit": "um"
+              },
+              "src_ref": {
+                "action_index": 2,
+                "kind": "detected_point"
+              }
+            }
+          },
+          {
+            "action": "acquire_image",
+            "params": {
+              "hfw_um": 50
+            }
+          },
+          {
+            "action": "verify_target",
+            "params": {
+              "confidence_threshold": 0.5
+            },
+            "refs": {
+              "image_ref": {
+                "action_index": 4,
+                "beam_type": "ION",
+                "kind": "acquired_image"
+              }
+            }
+          }
+        ],
+        "confidence": 0.6,
+        "covered_intent": "marker_acquisition",
+        "decision_summary": "Observed facts: the workflow failed at node marker_detect with TARGET_NOT_FOUND (read_planning_brief); event-0022 records 'no detection from inference service' for scene all_scenes on the 50 um ION image; the latest 1024x1024 ION frame (sha256 6e7175ae...) contains no confidently detectable marker at 50 um HFW. Event history shows the marker was milled at the origin stage position (event-0012, mill_cross_marker) and the stage was then deliberately moved away (event-0016, marker_stage_hide), leaving the stage at x=75, y=26 (device snapshot). The most likely cause is that the marker lies outside the narrow 50 um field after the stage-hide move, not that the marker is missing. Unknowns: the exact off-frame marker offset; whether it lies within a 400 um field. Strategy: repeat detection at the same 50 um conditions would add no information, so instead (1) acquire a wide 400 um ION search frame (contract maximum), (2) detect the marker there with a relaxed threshold 0.3 to tolerate its smaller apparent size at low magnification, (3) move the stage to bring the detected marker (src_ref from action 2) to image center (dst 0,0 um; threshold 5 um fixed), then (4) acquire a fresh 50 um ION frame and (5) verify the marker at the workflow's declared threshold 0.5, matching the required postcondition target_visible(marker, hfw=50 um). Numerical choices: 400 um maximizes search coverage within the 4 remaining recovery images; 0.3 search threshold widens acceptance for a small low-mag target; 0.5 verify threshold matches the original workflow threshold; dst (0,0) centers the marker well inside the +/-25 um half-field of the 50 um view. The captured safety snapshot shows the manipulator parked, no collision, stage idle; ACE rechecks clearance before each executed move.",
+        "resume_after": "marker_detect"
+      }
+    },
+    "result": {
+      "accepted": true,
+      "action_count": 5
+    }
+  }
+]

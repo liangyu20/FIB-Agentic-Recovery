@@ -1,0 +1,4 @@
+case_id,scenario,plan,validation,images
+R-M01,Marker out of view,physical_cases/marker/plan.json,physical_cases/marker/validation.json,physical_cases/marker/image_sequence.csv
+R-D01,Insufficient milling depth,physical_cases/depth/plan.json,physical_cases/depth/validation.json,physical_cases/depth/image_sequence.csv
+R-P01,Probe out of view,physical_cases/probe/plan.json,physical_cases/probe/validation.json,physical_cases/probe/image_sequence.csv

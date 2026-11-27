@@ -1,0 +1,5 @@
+case_id,scenario,plan,validation,acceptance,images
+S-P01,Probe out of view,probe/plan_01.json | probe/plan_02.json,probe/validation_01.json | probe/validation_02.json,"SEM and FIB needle visible at 50 um after milling, polish, and U-cut",probe/image_01.png | probe/image_02.png | probe/image_03.png | probe/image_04.png | probe/image_05.png | probe/image_06.png | probe/image_07.png
+S-M01,Marker out of view,marker/plan_01.json,marker/validation_01.json,Postcondition passed; marker in final image,marker/image_01.png | marker/image_02.png
+S-D01,Insufficient milling depth,depth/plan_01.json,depth/validation_01.json,Postcondition and independent simulator acceptance passed,depth/image_01.png | depth/image_02.png
+S-L01,Specimen detachment,specimen_detachment/plan_01.json,specimen_detachment/validation_01.json,Additional 10 µm lift continuation succeeded; specimen moves with probe in the FIB image,specimen_detachment/image_01.png

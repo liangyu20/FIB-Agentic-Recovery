@@ -1,0 +1,29 @@
+{
+  "fault": "depth",
+  "seed": 215,
+  "arm": "agent_exp",
+  "run_id": "cli-47de3b26dbc0",
+  "max_readback_error_um": 0.0,
+  "required_depth_um": 8.0,
+  "original_fixed_y_depth_um": 8.329,
+  "original_oracle_pass": true,
+  "inner_upper_y_um": 4.875,
+  "inner_upper_depth_um": 8.9227,
+  "inner_lower_y_um": -3.875,
+  "inner_lower_depth_um": 8.9285,
+  "revised_near_edge_min_depth_um": 8.9227,
+  "revised_oracle_pass": true,
+  "workflow_success": true,
+  "center_preserved": true,
+  "sampling_windows": {
+    "upper": [
+      3.5,
+      7.25
+    ],
+    "lower": [
+      -6.25,
+      -2.5
+    ]
+  },
+  "local_profile_file": "mesh_readback/local_profiles/agent_exp/seed-0215.csv"
+}

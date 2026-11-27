@@ -1,0 +1,45 @@
+{
+  "actions": [
+    {
+      "action": "mill_more",
+      "params": {
+        "depth_increment_um": 3.4,
+        "recipe_ref": "real_three_trenches_20261110_sim_settings"
+      }
+    },
+    {
+      "action": "acquire_image",
+      "params": {
+        "hfw_um": 50
+      }
+    },
+    {
+      "action": "detect_target",
+      "params": {
+        "confidence_threshold": 0.5
+      },
+      "refs": {
+        "image_ref": {
+          "action_index": 2,
+          "beam_type": "ELECTRON",
+          "kind": "acquired_image"
+        }
+      }
+    },
+    {
+      "action": "verify_depth",
+      "params": {},
+      "refs": {
+        "detection_ref": {
+          "action_index": 3,
+          "kind": "detection_result"
+        }
+      }
+    }
+  ],
+  "covered_intent": "milling_depth_verification",
+  "resume_after": "depth_check",
+  "confidence": 0.6,
+  "generated_by": "ace_agent_skill",
+  "stage_status": "complete"
+}

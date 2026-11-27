@@ -1,0 +1,37 @@
+[
+  {
+    "tool": "validate_plan",
+    "accepted": true,
+    "stage": null,
+    "issues": [],
+    "error": null,
+    "compiled_actions": [
+      {
+        "action": "mill_more",
+        "operation": "general_milling"
+      },
+      {
+        "action": "acquire_image",
+        "operation": "acquire_image"
+      },
+      {
+        "action": "detect_target",
+        "operation": "detection"
+      },
+      {
+        "action": "verify_depth",
+        "operation": "processed_area_check"
+      }
+    ],
+    "action_count": null
+  },
+  {
+    "tool": "submit_plan",
+    "accepted": true,
+    "stage": null,
+    "issues": [],
+    "error": null,
+    "compiled_actions": null,
+    "action_count": 4
+  }
+]

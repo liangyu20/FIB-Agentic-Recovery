@@ -1,0 +1,61 @@
+fault_type,seed,arm,run_id,first_failure_code,fault_triggered,image_count,plan_count,action_count,reported_acceptance,acceptance_basis,target_depth_um,final_mesh_depth_um,first_failure_image_sha256
+depth,201,agent_exp,cli-49a6aae02d8f,DEPTH_INSUFFICIENT,True,12,1,10,True,Table S3 final mesh depth,9.0,9.8126,2d2a13c4d255b61900802cf12fdd1f20e0ba5a1dc78f3497dfa6223f2b5db461
+depth,202,agent_exp,cli-8f644b8899d1,DEPTH_INSUFFICIENT,True,12,1,10,True,Table S3 final mesh depth,8.0,10.7135,6fca7ac565fd978aee44488e44a5d118652be8b8e14d5eb0094e85ac6a1e8957
+depth,203,agent_exp,cli-675ff2dfe37d,DEPTH_INSUFFICIENT,True,12,1,10,True,Table S3 final mesh depth,10.0,10.7103,17270f1485d10788da5b5c61b7fb84d47e6406cb61301a8ce49958f14976dcdc
+depth,204,agent_exp,cli-fce294285cdd,DEPTH_INSUFFICIENT,True,12,1,10,True,Table S3 final mesh depth,10.0,12.9421,379a47d23df3e4f5e60f3f8c2d0b89549f2748ce1bba5474fa41d0a4785b0dd1
+depth,205,agent_exp,cli-ad0e79d134f4,DEPTH_INSUFFICIENT,True,12,1,10,True,Table S3 final mesh depth,9.0,11.6051,9e2d4fc1d0a15bfdefe5af97f4c4d86954181aa90547a5afecb6916f7c0d9cab
+depth,206,agent_exp,cli-f69293ccbf6c,DEPTH_INSUFFICIENT,True,12,1,10,True,Table S3 final mesh depth,9.0,9.8126,891b52a6fec4075035df11fb0c0bb3894105740fba2be33e5c6dedaca29cd6b3
+depth,207,agent_exp,cli-a15acbf0af0b,DEPTH_INSUFFICIENT,True,12,1,10,True,Table S3 final mesh depth,9.0,11.6051,7c4e30a7b10132fa8d3691dd1312728cbd21402fb4c8c51077017fcefc8a82de
+depth,208,agent_exp,cli-90f92311bc4a,DEPTH_INSUFFICIENT,True,12,1,10,True,Table S3 final mesh depth,9.0,9.8126,732066d9b49eb04c445662d47d3e7a63ee866581b746f25214ae80ddaee32b0f
+depth,209,agent_exp,cli-61ce093d6145,DEPTH_INSUFFICIENT,True,12,1,10,True,Table S3 final mesh depth,10.0,12.9421,84b357f34b5b8a8d0cd4a1be3d6b2c2575b4ec7c4a2977500e72d2a3135d0e68
+depth,210,agent_exp,cli-66c9ef39c730,DEPTH_INSUFFICIENT,True,12,1,10,True,Table S3 final mesh depth,10.0,12.5005,91bea36eb4f6f970776587ff8b6cd2d26b6cd2d5ffa26389eac3dfecf5903c48
+depth,211,agent_exp,cli-88bb03168498,DEPTH_INSUFFICIENT,True,12,1,10,True,Table S3 final mesh depth,8.0,8.9227,9d1f5c948bac63608cbc488f15e23be536588557011daf65035e454ddc2ed138
+depth,212,agent_exp,cli-5a1082f838e9,DEPTH_INSUFFICIENT,True,12,1,10,True,Table S3 final mesh depth,10.0,11.6051,a3864eb020b6f5d7f1ef7f200f5e16223a945a7f5a97ff11a3c5df2ce9b942ad
+depth,213,agent_exp,cli-8f47e2dc0fd6,DEPTH_INSUFFICIENT,True,12,1,10,True,Table S3 final mesh depth,9.0,9.3711,59f28745840519873c0234e65dc4f24d6c6f27827f9a7eb73d4924a3d80b38f4
+depth,214,agent_exp,cli-403844cbd335,DEPTH_INSUFFICIENT,True,12,1,10,True,Table S3 final mesh depth,9.0,9.8126,5e8aa11c725a01c1f1d6ac4b494db18bedeb979abc7cdc361cd37a2ad0a4714b
+depth,215,agent_exp,cli-47de3b26dbc0,DEPTH_INSUFFICIENT,True,12,1,10,True,Table S3 final mesh depth,8.0,8.9227,0d8157e2bc8dfc638fbf390d5cacbf43742f28490d8be63d4050eaec5d86d2f9
+depth,216,agent_exp,cli-f44338e96de9,DEPTH_INSUFFICIENT,True,12,1,10,True,Table S3 final mesh depth,9.0,9.8126,d83c929f5c34221a6fcec55fe7bc2f214ed2d9bceb867e49a2761f14841585c5
+depth,217,agent_exp,cli-3cfbca271c04,DEPTH_INSUFFICIENT,True,12,1,10,True,Table S3 final mesh depth,10.0,11.1518,db395eca0e56035407507f4651e1b0224d17ab93bbbf35f9a90b4259affc2936
+depth,218,agent_exp,cli-95900f057945,DEPTH_INSUFFICIENT,True,12,1,10,True,Table S3 final mesh depth,8.0,8.9227,eaaf090789f49992063cdbaf788df15651f0c4ff28d306fdf01cf263f0fb1f8c
+depth,219,agent_exp,cli-7c915936defd,DEPTH_INSUFFICIENT,True,12,1,10,True,Table S3 final mesh depth,10.0,12.9421,fed0206671f86eff4d26eeb8a0f6e134544c8b8b1f701988a6065fb600edb4b1
+depth,220,agent_exp,cli-8062b9fe24f1,DEPTH_INSUFFICIENT,True,12,1,10,True,Table S3 final mesh depth,10.0,12.5005,6fd8b4fcefd2654c2aee94d8881fa1e6d41f708876deccc9637b4b0e41fae350
+marker,201,agent_exp,cli-1d4761369916,TARGET_NOT_FOUND,True,11,1,14,True,final target visibility,,,ab53511d116026d0d74b72739283212d1b52bb9f0c986e0bccbf9d1de81d6b26
+marker,202,agent_exp,cli-9605ffa74328,TARGET_NOT_FOUND,True,9,1,12,True,final target visibility,,,00dc62ac0e18de7ccd08be1c80755a071f7a448447f98179479af3efcd26470b
+marker,203,agent_exp,cli-784a0dcbde82,TARGET_NOT_FOUND,True,11,1,14,True,final target visibility,,,e49d1cbb06a6b0b56f54acb945cc7c592831acdab43518dd66d03179b4601fa6
+marker,204,agent_exp,cli-f2391090f4f4,TARGET_NOT_FOUND,True,11,1,14,True,final target visibility,,,9754c4a4039381af09de701a16e985d1d7a87243be48681afa8e54058f2d446e
+marker,205,agent_exp,cli-2bb51bb39424,TARGET_NOT_FOUND,True,11,1,14,True,final target visibility,,,2fd95c936c5460f3ec1d28c45833ccd229e4d9d945fb69e36978f77e18bad5b8
+marker,206,agent_exp,cli-87c43d3099b0,TARGET_NOT_FOUND,True,11,1,14,True,final target visibility,,,c704297f87b7fb1b8a6dfea498aa32e93ca98ec38508f518396395ba272afc45
+marker,207,agent_exp,cli-3a5962f81d79,TARGET_NOT_FOUND,True,9,1,12,True,final target visibility,,,65dbccd6a0ca0746df3a3b2c6098b5cd79fa5ba924cbe7270c4cc8e22716c073
+marker,208,agent_exp,cli-4ca58ee02524,TARGET_NOT_FOUND,True,11,1,14,True,final target visibility,,,ef5efa48ff44bf3e1cd27f1c4f3696d0365270669eba1eaee2a7214de2e2f04d
+marker,209,agent_exp,cli-d74c0f427117,TARGET_NOT_FOUND,True,11,1,14,True,final target visibility,,,882b51d3981211f6b8d3eb2f2d31aad9e748b16c12858e13d052d3fd7f4e9fff
+marker,210,agent_exp,cli-1d6004b2c0e8,TARGET_NOT_FOUND,True,11,1,14,True,final target visibility,,,b6a58305ef1d97a14734de38e99086482e2a72666979f0165b1528183ce8caf1
+marker,211,agent_exp,cli-2756db2e088d,TARGET_NOT_FOUND,True,9,1,12,True,final target visibility,,,f4e0ce49916d78de99fd8c75a4077b47d8b933b4eca7959906d45498cd8dd0c5
+marker,212,agent_exp,cli-482108897d27,TARGET_NOT_FOUND,True,11,1,14,True,final target visibility,,,2540c8ad23de2710dc919503cf50225d7ef4809ea25933a44eaea7feb0035864
+marker,213,agent_exp,cli-2566982ab48d,TARGET_NOT_FOUND,True,11,1,14,True,final target visibility,,,84c80f8c545eac47adb43e1e3df31ab517a56fd9c4ad7fe06c6343ebd21f59a0
+marker,214,agent_exp,cli-e56dd0cac5a7,TARGET_NOT_FOUND,True,11,1,14,True,final target visibility,,,92ff90e5ddafc2f889560c451d6dc232750b92e70e072aee51e3a081fa91fb73
+marker,215,agent_exp,cli-97db8c53d48c,TARGET_NOT_FOUND,True,11,1,14,True,final target visibility,,,ce85bfb635bd6636b97fa460055964056f87a832827eed3ec15d9f5f33fde881
+marker,216,agent_exp,cli-0c9e785d26e2,TARGET_NOT_FOUND,True,11,1,14,True,final target visibility,,,6976515f2b6ff22dd40f21c1db35b2482afdd33875ef27dfd0fe7b55f28445d6
+marker,217,agent_exp,cli-cd153502eb54,TARGET_NOT_FOUND,True,11,1,14,True,final target visibility,,,c9434927fc2f8134b16ab13400b787e06a9aa460f9020ec3d35cca2b206815d9
+marker,218,agent_exp,cli-1a295ddfea7f,TARGET_NOT_FOUND,True,11,1,14,True,final target visibility,,,a32a565f221ec95b19be37d6effccc03a1c2731ef1354a73d5007ea1cfc97895
+marker,219,agent_exp,cli-d40d3cd2ec4d,TARGET_NOT_FOUND,True,9,1,12,True,final target visibility,,,1fe28854e3a5c1bb77037439eb79bdd8b8b8f4be1792fe6b601c9e8db28b2ed5
+marker,220,agent_exp,cli-c1e14b056316,TARGET_NOT_FOUND,True,9,1,12,True,final target visibility,,,06fdd3be02bb7d3e90f0a221c494cb082267139380ccb1d7de0bd609c939c474
+probe,201,agent_exp,cli-9d9c0d024ad0,TARGET_NOT_FOUND,True,26,2,32,True,final target visibility,,,853ee93d2053b72547a981e0f6ed2de345be0129a8f1035d56ee599e748e64fb
+probe,202,agent_exp,cli-23cdc6ba8f9a,TARGET_NOT_FOUND,True,22,2,26,True,final target visibility,,,9e1e61a8e452d8bc17fbc8b8adfc3a407f2878b599ea459408107bce36e262d0
+probe,203,agent_exp,cli-14656f50c700,TARGET_NOT_FOUND,True,22,2,26,True,final target visibility,,,2e5db2bed5c7eabc42b9228d775df0f904881da938f1f3aa7622c45f78e2e97e
+probe,204,agent_exp,cli-9309322eac84,TARGET_NOT_FOUND,True,22,2,27,True,final target visibility,,,1795008085cbad289e004f9ededd8abdd8f9e55345660ff718b1fef6502f6dd0
+probe,205,agent_exp,cli-b668c5b424f0,TARGET_NOT_FOUND,True,24,2,29,True,final target visibility,,,ae57cafbe8a4122f644d39cf47bf64ba6309804312911adbbccae657b0aaca58
+probe,206,agent_exp,cli-51137db7a244,TARGET_NOT_FOUND,True,24,2,29,True,final target visibility,,,d56776560e65b553097e384c820900ef6e5c46edb1de3a61e55f06517ab2bdd1
+probe,207,agent_exp,cli-5ba6bfb56948,TARGET_NOT_FOUND,True,26,2,32,True,final target visibility,,,bcae39478f6204d83372a2cfcff0ec2136ada45185918832594fbdeb6f0252e3
+probe,208,agent_exp,cli-3a7e8187d4e6,TARGET_NOT_FOUND,True,22,2,26,True,final target visibility,,,fb0884929929874b2d6d8b12718d303e53e6f6f06772880d719ef200b2b86eb1
+probe,209,agent_exp,cli-c29624ae7259,TARGET_NOT_FOUND,True,22,2,26,True,final target visibility,,,ad73de0d1df0f18e8b8929d1169ba89b4af3984f588f4c6c7e21541ee86c7f9f
+probe,210,agent_exp,cli-41ed55a8ec64,TARGET_NOT_FOUND,True,25,2,30,True,final target visibility,,,1822d7f386e1ff69f88e3b17d05f09248394944cbd1eb31cccdb37c87330ee1c
+probe,211,agent_exp,cli-b475ae30314f,TARGET_NOT_FOUND,True,20,2,24,True,final target visibility,,,0e207cab9ae7bacd451f4a5cd482b2e759901c999fff5c3e60b9390124f7e795
+probe,212,agent_exp,cli-9b00fc0ac625,TARGET_NOT_FOUND,True,22,2,26,True,final target visibility,,,3143969240b0482b46ec03e84594fd33b65208084cfa3027e86564ba7dca72c3
+probe,213,agent_exp,cli-09264cf7de81,TARGET_NOT_FOUND,True,24,2,29,True,final target visibility,,,1518bf3f20e5aa4776834ddbe7d92fbf1a1cc9b94d898efe5167058639888fbb
+probe,214,agent_exp,cli-1f089dff0202,TARGET_NOT_FOUND,True,22,2,26,True,final target visibility,,,2226ab0ac79cf7caa7bd4f00a40225a13ee3315d0a386a23a8a42103aea94a08
+probe,215,agent_exp,cli-d40ceaa784d0,TARGET_NOT_FOUND,True,22,2,27,True,final target visibility,,,a9342113d365a1ca12af6cf2d6ef8321dbfc55676f84a4dc35f3a6dbb790f338
+probe,216,agent_exp,cli-2380329a85cb,TARGET_NOT_FOUND,True,26,2,31,True,final target visibility,,,ddc8ea9d964ebb8f3dcbd197d056a6833ee881fa59f2237eaa1246d9b93c025e
+probe,217,agent_exp,cli-7172ae6b950c,TARGET_NOT_FOUND,True,22,2,26,True,final target visibility,,,7258ab2ca317c494bce23ba99e456403064d1a4f0d795ca054e466b5e57af551
+probe,218,agent_exp,cli-162fbbcd036c,TARGET_NOT_FOUND,True,18,2,22,True,final target visibility,,,1be9a5e5d54807c826710169c0f06e9309daf5dae82f710dfe9784e1b10f4ec7
+probe,219,agent_exp,cli-bf348e8d8d9d,TARGET_NOT_FOUND,True,24,2,28,True,final target visibility,,,5e98490858c9e39ab62a4b42e81ba4a6f3c6dbc669bded88912dd6131b144e00
+probe,220,agent_exp,cli-9829467e177c,TARGET_NOT_FOUND,True,24,2,29,True,final target visibility,,,a947c53ab0751eec09a58f531db22028e9b0557c7ba3a02672d9459c88fbe38a

@@ -1,0 +1,8 @@
+image,beam,hfw_um,role
+image_01.png,ION,50,U-cut preparation
+image_02.png,ELECTRON,50,SEM fault image
+image_03.png,ELECTRON,200,SEM search image
+image_04.png,ELECTRON,50,SEM verification image
+image_05.png,ION,50,FIB fault image
+image_06.png,ION,100,FIB search image
+image_07.png,ION,50,FIB verification image

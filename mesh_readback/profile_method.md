@@ -1,0 +1,3 @@
+# Local depth profile data
+
+The CSV files under `local_profiles/` contain only the x=0 µm vertical surface readbacks inside the two inner trench windows next to the protective layer. Sample positions are spaced 0.25 µm apart, beginning 0.125 µm inside each window. `surface_z_um` is the mean top surface at (−5, 0) and (5, 0) µm. `depth_um = surface_z_um − top_z_um`. The deepest sample in each window is selected; the smaller of those two depths is the reported final depth. The 60 reported values were checked against these profiles to within 0.00011 µm. These local profiles exclude the full scene mesh and instrument state.

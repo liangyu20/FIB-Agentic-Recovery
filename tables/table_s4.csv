@@ -1,0 +1,6 @@
+﻿Strategy,Probe (n=20),Marker (n=20),Depth (n=20)
+Safe stop,0,0,0
+Fixed retry,0,0,0
+Agent without retrieved experience,12,15,20
+Agent with reviewed experience,20,20,20
+Rule controller,20,20,11

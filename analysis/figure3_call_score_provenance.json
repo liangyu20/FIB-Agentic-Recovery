@@ -1,0 +1,925 @@
+{
+  "definition": "Extra device calls are counted above paired safe-stop over all 20 trials. Calls per verified recovery = total extra calls / independent-oracle successes, including calls in failed trials. The recovery-call efficiency score = 100 × lowest calls per verified recovery among eligible arms in that fault / arm calls per verified recovery. Arms with zero recoveries have no efficiency score.",
+  "raw_cost": {
+    "probe": {
+      "fixed_retry": {
+        "total_extra_calls": 40,
+        "mean_extra_calls_per_trial": 2.0,
+        "per_seed_extra_calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "agent_no_exp": {
+        "total_extra_calls": 210,
+        "mean_extra_calls_per_trial": 10.5,
+        "per_seed_extra_calls": [
+          17,
+          16,
+          2,
+          16,
+          16,
+          16,
+          16,
+          2,
+          16,
+          17,
+          16,
+          0,
+          2,
+          16,
+          16,
+          2,
+          16,
+          2,
+          2,
+          4
+        ]
+      },
+      "agent_exp": {
+        "total_extra_calls": 431,
+        "mean_extra_calls_per_trial": 21.55,
+        "per_seed_extra_calls": [
+          26,
+          20,
+          20,
+          21,
+          23,
+          23,
+          26,
+          20,
+          20,
+          24,
+          18,
+          20,
+          23,
+          20,
+          21,
+          25,
+          20,
+          16,
+          22,
+          23
+        ]
+      },
+      "agent_replan": {
+        "total_extra_calls": 331,
+        "mean_extra_calls_per_trial": 16.55,
+        "per_seed_extra_calls": [
+          17,
+          16,
+          22,
+          16,
+          16,
+          16,
+          16,
+          25,
+          16,
+          17,
+          16,
+          0,
+          9,
+          16,
+          16,
+          22,
+          16,
+          24,
+          26,
+          9
+        ]
+      },
+      "expert_wide": {
+        "total_extra_calls": 320,
+        "mean_extra_calls_per_trial": 16.0,
+        "per_seed_extra_calls": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ]
+      }
+    },
+    "marker": {
+      "fixed_retry": {
+        "total_extra_calls": 40,
+        "mean_extra_calls_per_trial": 2.0,
+        "per_seed_extra_calls": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "agent_no_exp": {
+        "total_extra_calls": 86,
+        "mean_extra_calls_per_trial": 4.3,
+        "per_seed_extra_calls": [
+          5,
+          5,
+          2,
+          5,
+          2,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          6,
+          2,
+          5,
+          5,
+          5,
+          5,
+          5,
+          2,
+          2
+        ]
+      },
+      "agent_exp": {
+        "total_extra_calls": 130,
+        "mean_extra_calls_per_trial": 6.5,
+        "per_seed_extra_calls": [
+          7,
+          5,
+          7,
+          7,
+          7,
+          7,
+          5,
+          7,
+          7,
+          7,
+          5,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          5,
+          5
+        ]
+      },
+      "agent_replan": {
+        "total_extra_calls": 120,
+        "mean_extra_calls_per_trial": 6.0,
+        "per_seed_extra_calls": [
+          5,
+          5,
+          9,
+          5,
+          9,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          6,
+          8,
+          5,
+          5,
+          5,
+          5,
+          5,
+          9,
+          9
+        ]
+      },
+      "expert_wide": {
+        "total_extra_calls": 100,
+        "mean_extra_calls_per_trial": 5.0,
+        "per_seed_extra_calls": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      }
+    },
+    "depth": {
+      "agent_no_exp": {
+        "total_extra_calls": 60,
+        "mean_extra_calls_per_trial": 3.0,
+        "per_seed_extra_calls": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "agent_exp": {
+        "total_extra_calls": 60,
+        "mean_extra_calls_per_trial": 3.0,
+        "per_seed_extra_calls": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "agent_replan": {
+        "total_extra_calls": 60,
+        "mean_extra_calls_per_trial": 3.0,
+        "per_seed_extra_calls": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "expert_wide": {
+        "total_extra_calls": 60,
+        "mean_extra_calls_per_trial": 3.0,
+        "per_seed_extra_calls": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      }
+    }
+  },
+  "radar": {
+    "fixed_retry": {
+      "probe": {
+        "success_pct": 0.0,
+        "inverse_extra_calls_pct": 100.0,
+        "extra_calls_pct_of_fault_max": 9.280742459396752,
+        "calls_per_verified_recovery": null,
+        "recovery_call_efficiency_pct": null
+      },
+      "marker": {
+        "success_pct": 0.0,
+        "inverse_extra_calls_pct": 100.0,
+        "extra_calls_pct_of_fault_max": 30.76923076923077,
+        "calls_per_verified_recovery": null,
+        "recovery_call_efficiency_pct": null
+      },
+      "depth": {
+        "success_pct": 0.0,
+        "calls_per_verified_recovery": null,
+        "recovery_call_efficiency_pct": null
+      }
+    },
+    "agent_no_exp": {
+      "probe": {
+        "success_pct": 60.0,
+        "inverse_extra_calls_pct": 19.047619047619047,
+        "extra_calls_pct_of_fault_max": 48.72389791183294,
+        "calls_per_verified_recovery": 17.5,
+        "recovery_call_efficiency_pct": 91.42857142857143
+      },
+      "marker": {
+        "success_pct": 75.0,
+        "inverse_extra_calls_pct": 46.51162790697675,
+        "extra_calls_pct_of_fault_max": 66.15384615384616,
+        "calls_per_verified_recovery": 5.733333333333333,
+        "recovery_call_efficiency_pct": 87.20930232558139
+      },
+      "depth": {
+        "success_pct": 100.0,
+        "inverse_extra_calls_pct": 66.66666666666667,
+        "extra_calls_pct_of_fault_max": 100.0,
+        "calls_per_verified_recovery": 3.0,
+        "recovery_call_efficiency_pct": 100.0
+      }
+    },
+    "agent_exp": {
+      "probe": {
+        "success_pct": 100.0,
+        "inverse_extra_calls_pct": 9.280742459396752,
+        "extra_calls_pct_of_fault_max": 100.0,
+        "calls_per_verified_recovery": 21.55,
+        "recovery_call_efficiency_pct": 74.24593967517401
+      },
+      "marker": {
+        "success_pct": 100.0,
+        "inverse_extra_calls_pct": 30.76923076923077,
+        "extra_calls_pct_of_fault_max": 100.0,
+        "calls_per_verified_recovery": 6.5,
+        "recovery_call_efficiency_pct": 76.92307692307692
+      },
+      "depth": {
+        "success_pct": 100.0,
+        "inverse_extra_calls_pct": 66.66666666666667,
+        "extra_calls_pct_of_fault_max": 100.0,
+        "calls_per_verified_recovery": 3.0,
+        "recovery_call_efficiency_pct": 100.0
+      }
+    },
+    "agent_replan": {
+      "probe": {
+        "success_pct": 85.0,
+        "inverse_extra_calls_pct": 12.084592145015105,
+        "extra_calls_pct_of_fault_max": 76.79814385150812,
+        "calls_per_verified_recovery": 19.470588235294116,
+        "recovery_call_efficiency_pct": 82.17522658610272
+      },
+      "marker": {
+        "success_pct": 90.0,
+        "inverse_extra_calls_pct": 33.333333333333336,
+        "extra_calls_pct_of_fault_max": 92.3076923076923,
+        "calls_per_verified_recovery": 6.666666666666667,
+        "recovery_call_efficiency_pct": 75.0
+      },
+      "depth": {
+        "success_pct": 100.0,
+        "inverse_extra_calls_pct": 66.66666666666667,
+        "extra_calls_pct_of_fault_max": 100.0,
+        "calls_per_verified_recovery": 3.0,
+        "recovery_call_efficiency_pct": 100.0
+      }
+    },
+    "expert_wide": {
+      "probe": {
+        "success_pct": 100.0,
+        "inverse_extra_calls_pct": 12.5,
+        "extra_calls_pct_of_fault_max": 74.24593967517401,
+        "calls_per_verified_recovery": 16.0,
+        "recovery_call_efficiency_pct": 100.0
+      },
+      "marker": {
+        "success_pct": 100.0,
+        "inverse_extra_calls_pct": 40.0,
+        "extra_calls_pct_of_fault_max": 76.92307692307692,
+        "calls_per_verified_recovery": 5.0,
+        "recovery_call_efficiency_pct": 100.0
+      },
+      "depth": {
+        "success_pct": 55.0,
+        "inverse_extra_calls_pct": 66.66666666666667,
+        "extra_calls_pct_of_fault_max": 100.0,
+        "calls_per_verified_recovery": 5.454545454545454,
+        "recovery_call_efficiency_pct": 55.00000000000001
+      }
+    }
+  },
+  "trace_sources": [
+    {
+      "fault": "probe",
+      "seed": 201,
+      "arm": "agent_exp",
+      "extra_calls": 26
+    },
+    {
+      "fault": "probe",
+      "seed": 202,
+      "arm": "agent_exp",
+      "extra_calls": 20
+    },
+    {
+      "fault": "probe",
+      "seed": 203,
+      "arm": "agent_exp",
+      "extra_calls": 20
+    },
+    {
+      "fault": "probe",
+      "seed": 204,
+      "arm": "agent_exp",
+      "extra_calls": 21
+    },
+    {
+      "fault": "probe",
+      "seed": 205,
+      "arm": "agent_exp",
+      "extra_calls": 23
+    },
+    {
+      "fault": "probe",
+      "seed": 206,
+      "arm": "agent_exp",
+      "extra_calls": 23
+    },
+    {
+      "fault": "probe",
+      "seed": 207,
+      "arm": "agent_exp",
+      "extra_calls": 26
+    },
+    {
+      "fault": "probe",
+      "seed": 208,
+      "arm": "agent_exp",
+      "extra_calls": 20
+    },
+    {
+      "fault": "probe",
+      "seed": 209,
+      "arm": "agent_exp",
+      "extra_calls": 20
+    },
+    {
+      "fault": "probe",
+      "seed": 210,
+      "arm": "agent_exp",
+      "extra_calls": 24
+    },
+    {
+      "fault": "probe",
+      "seed": 211,
+      "arm": "agent_exp",
+      "extra_calls": 18
+    },
+    {
+      "fault": "probe",
+      "seed": 212,
+      "arm": "agent_exp",
+      "extra_calls": 20
+    },
+    {
+      "fault": "probe",
+      "seed": 213,
+      "arm": "agent_exp",
+      "extra_calls": 23
+    },
+    {
+      "fault": "probe",
+      "seed": 214,
+      "arm": "agent_exp",
+      "extra_calls": 20
+    },
+    {
+      "fault": "probe",
+      "seed": 215,
+      "arm": "agent_exp",
+      "extra_calls": 21
+    },
+    {
+      "fault": "probe",
+      "seed": 216,
+      "arm": "agent_exp",
+      "extra_calls": 25
+    },
+    {
+      "fault": "probe",
+      "seed": 217,
+      "arm": "agent_exp",
+      "extra_calls": 20
+    },
+    {
+      "fault": "probe",
+      "seed": 218,
+      "arm": "agent_exp",
+      "extra_calls": 16
+    },
+    {
+      "fault": "probe",
+      "seed": 219,
+      "arm": "agent_exp",
+      "extra_calls": 22
+    },
+    {
+      "fault": "probe",
+      "seed": 220,
+      "arm": "agent_exp",
+      "extra_calls": 23
+    },
+    {
+      "fault": "probe",
+      "seed": 203,
+      "arm": "agent_replan",
+      "extra_calls": 22
+    },
+    {
+      "fault": "probe",
+      "seed": 208,
+      "arm": "agent_replan",
+      "extra_calls": 25
+    },
+    {
+      "fault": "probe",
+      "seed": 213,
+      "arm": "agent_replan",
+      "extra_calls": 9
+    },
+    {
+      "fault": "probe",
+      "seed": 216,
+      "arm": "agent_replan",
+      "extra_calls": 22
+    },
+    {
+      "fault": "probe",
+      "seed": 218,
+      "arm": "agent_replan",
+      "extra_calls": 24
+    },
+    {
+      "fault": "probe",
+      "seed": 219,
+      "arm": "agent_replan",
+      "extra_calls": 26
+    },
+    {
+      "fault": "probe",
+      "seed": 220,
+      "arm": "agent_replan",
+      "extra_calls": 9
+    },
+    {
+      "fault": "marker",
+      "seed": 201,
+      "arm": "agent_exp",
+      "extra_calls": 7
+    },
+    {
+      "fault": "marker",
+      "seed": 202,
+      "arm": "agent_exp",
+      "extra_calls": 5
+    },
+    {
+      "fault": "marker",
+      "seed": 203,
+      "arm": "agent_exp",
+      "extra_calls": 7
+    },
+    {
+      "fault": "marker",
+      "seed": 204,
+      "arm": "agent_exp",
+      "extra_calls": 7
+    },
+    {
+      "fault": "marker",
+      "seed": 205,
+      "arm": "agent_exp",
+      "extra_calls": 7
+    },
+    {
+      "fault": "marker",
+      "seed": 206,
+      "arm": "agent_exp",
+      "extra_calls": 7
+    },
+    {
+      "fault": "marker",
+      "seed": 207,
+      "arm": "agent_exp",
+      "extra_calls": 5
+    },
+    {
+      "fault": "marker",
+      "seed": 208,
+      "arm": "agent_exp",
+      "extra_calls": 7
+    },
+    {
+      "fault": "marker",
+      "seed": 209,
+      "arm": "agent_exp",
+      "extra_calls": 7
+    },
+    {
+      "fault": "marker",
+      "seed": 210,
+      "arm": "agent_exp",
+      "extra_calls": 7
+    },
+    {
+      "fault": "marker",
+      "seed": 211,
+      "arm": "agent_exp",
+      "extra_calls": 5
+    },
+    {
+      "fault": "marker",
+      "seed": 212,
+      "arm": "agent_exp",
+      "extra_calls": 7
+    },
+    {
+      "fault": "marker",
+      "seed": 213,
+      "arm": "agent_exp",
+      "extra_calls": 7
+    },
+    {
+      "fault": "marker",
+      "seed": 214,
+      "arm": "agent_exp",
+      "extra_calls": 7
+    },
+    {
+      "fault": "marker",
+      "seed": 215,
+      "arm": "agent_exp",
+      "extra_calls": 7
+    },
+    {
+      "fault": "marker",
+      "seed": 216,
+      "arm": "agent_exp",
+      "extra_calls": 7
+    },
+    {
+      "fault": "marker",
+      "seed": 217,
+      "arm": "agent_exp",
+      "extra_calls": 7
+    },
+    {
+      "fault": "marker",
+      "seed": 218,
+      "arm": "agent_exp",
+      "extra_calls": 7
+    },
+    {
+      "fault": "marker",
+      "seed": 219,
+      "arm": "agent_exp",
+      "extra_calls": 5
+    },
+    {
+      "fault": "marker",
+      "seed": 220,
+      "arm": "agent_exp",
+      "extra_calls": 5
+    },
+    {
+      "fault": "marker",
+      "seed": 203,
+      "arm": "agent_replan",
+      "extra_calls": 9
+    },
+    {
+      "fault": "marker",
+      "seed": 205,
+      "arm": "agent_replan",
+      "extra_calls": 9
+    },
+    {
+      "fault": "marker",
+      "seed": 213,
+      "arm": "agent_replan",
+      "extra_calls": 8
+    },
+    {
+      "fault": "marker",
+      "seed": 219,
+      "arm": "agent_replan",
+      "extra_calls": 9
+    },
+    {
+      "fault": "marker",
+      "seed": 220,
+      "arm": "agent_replan",
+      "extra_calls": 9
+    },
+    {
+      "fault": "depth",
+      "seed": 201,
+      "arm": "agent_exp",
+      "extra_calls": 3
+    },
+    {
+      "fault": "depth",
+      "seed": 202,
+      "arm": "agent_exp",
+      "extra_calls": 3
+    },
+    {
+      "fault": "depth",
+      "seed": 203,
+      "arm": "agent_exp",
+      "extra_calls": 3
+    },
+    {
+      "fault": "depth",
+      "seed": 204,
+      "arm": "agent_exp",
+      "extra_calls": 3
+    },
+    {
+      "fault": "depth",
+      "seed": 205,
+      "arm": "agent_exp",
+      "extra_calls": 3
+    },
+    {
+      "fault": "depth",
+      "seed": 206,
+      "arm": "agent_exp",
+      "extra_calls": 3
+    },
+    {
+      "fault": "depth",
+      "seed": 207,
+      "arm": "agent_exp",
+      "extra_calls": 3
+    },
+    {
+      "fault": "depth",
+      "seed": 208,
+      "arm": "agent_exp",
+      "extra_calls": 3
+    },
+    {
+      "fault": "depth",
+      "seed": 209,
+      "arm": "agent_exp",
+      "extra_calls": 3
+    },
+    {
+      "fault": "depth",
+      "seed": 210,
+      "arm": "agent_exp",
+      "extra_calls": 3
+    },
+    {
+      "fault": "depth",
+      "seed": 211,
+      "arm": "agent_exp",
+      "extra_calls": 3
+    },
+    {
+      "fault": "depth",
+      "seed": 212,
+      "arm": "agent_exp",
+      "extra_calls": 3
+    },
+    {
+      "fault": "depth",
+      "seed": 213,
+      "arm": "agent_exp",
+      "extra_calls": 3
+    },
+    {
+      "fault": "depth",
+      "seed": 214,
+      "arm": "agent_exp",
+      "extra_calls": 3
+    },
+    {
+      "fault": "depth",
+      "seed": 215,
+      "arm": "agent_exp",
+      "extra_calls": 3
+    },
+    {
+      "fault": "depth",
+      "seed": 216,
+      "arm": "agent_exp",
+      "extra_calls": 3
+    },
+    {
+      "fault": "depth",
+      "seed": 217,
+      "arm": "agent_exp",
+      "extra_calls": 3
+    },
+    {
+      "fault": "depth",
+      "seed": 218,
+      "arm": "agent_exp",
+      "extra_calls": 3
+    },
+    {
+      "fault": "depth",
+      "seed": 219,
+      "arm": "agent_exp",
+      "extra_calls": 3
+    },
+    {
+      "fault": "depth",
+      "seed": 220,
+      "arm": "agent_exp",
+      "extra_calls": 3
+    }
+  ],
+  "success_source": "Figure 3 original no-exp counts, reviewed-experience follow-up, and audited checkpoint replan cases."
+}
